@@ -1,4 +1,4 @@
-<!-- .slide: data-state="cover" id="cover-page" -->
+<!-- .slide: data-state="cover" id="cover-page" data-timing="20" -->
 <div class="title">
     <h1>SUSE<sub>&reg;</sub> Presentation</h1>
     <h2>Guidelines and Template</h2>

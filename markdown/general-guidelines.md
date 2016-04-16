@@ -1,8 +1,8 @@
-<!-- .slide: data-state="section-break" id="general-corporate-guidelines" -->
+<!-- .slide: data-state="section-break" id="general-corporate-guidelines" data-timing="10" -->
 # General corporate guidelines
 
 
-<!-- .slide: data-state="normal" id="design-goals" -->
+<!-- .slide: data-state="normal" id="design-goals" data-timing="30" -->
 ## Design goals
 
 The goal of this template is to maintain a clear, professional and

@@ -1,9 +1,9 @@
-<!-- .slide: data-state="section-break" id="template-slides" -->
+<!-- .slide: data-state="section-break" id="template-slides" data-timing="10s" -->
 # Template slides
 ## `<h2>` works here too
 
 
-<!-- .slide: data-state="normal" id="nested-lists" -->
+<!-- .slide: data-state="normal" id="nested-lists" data-timing="20s" -->
 ## Title of No-Logo Slide Here
 
 *   First-level bullet
@@ -12,7 +12,7 @@
             *   Fourth-level bullet
 
 
-<!-- .slide: data-state="normal" id="graphics-and-typeface" -->
+<!-- .slide: data-state="normal" id="graphics-and-typeface" data-timing="60s" -->
 ## Graphics and Typeface
 
 <div class="slide-section">
