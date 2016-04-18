@@ -107,10 +107,11 @@ and drop Markdown files into `markdown` and images into
 sections.
 
 This repo has two branches, one named `master` and one
-`gh-pages`. Make sure you do your regular work in `master`, then merge
-into `gh-pages` and push both branches. Your presentation will then be
-rendered to [GitHub Pages](https://pages.github.com/) at a URL of the
-form:
+`gh-pages`. Make sure you do your regular work in `master`, then run
+[`./bin/update-gh-pages.sh`](bin/update-gh-pages.sh).  Alternatively
+merge into `gh-pages` and push both branches. Your presentation will
+then be rendered to [GitHub Pages](https://pages.github.com/) at a URL
+of the form:
 
 - http://*username*.github.io/*presentation-repo-name*
 
