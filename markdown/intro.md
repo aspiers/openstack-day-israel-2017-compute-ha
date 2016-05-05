@@ -1,11 +1,12 @@
 <!-- .slide: data-state="normal" id="about" data-timing="0" -->
-# About this talk
+# About this presentation
 
-*   You can now [watch the video of this talk online](https://www.openstack.org/videos/video/high-availability-for-pets-and-hypervisors-state-of-the-nation).
-*   Press `?` for help on navigating these slides.
+*   You can now [watch the video of this presentation online](https://www.openstack.org/videos/video/high-availability-for-pets-and-hypervisors-state-of-the-nation)
+*   Press `?` for help on navigating these slides
+*   Press `m` for a slide menu
 *   Press `s` for speaker notes <br />
     *   (although watching the video is probably more useful)
-*   Here is the [original session abstract and details](https://www.openstack.org/summit/austin-2016/summit-schedule/events/7327).
+*   Here is the [original session abstract and details](https://www.openstack.org/summit/austin-2016/summit-schedule/events/7327)
 
 
 <!-- .slide: data-state="cover" id="cover-page" data-menu-title="Compute node HA" data-timing="20" -->
