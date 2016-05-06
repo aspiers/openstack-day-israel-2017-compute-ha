@@ -28,5 +28,5 @@ Note:
 *   Fencing via IPMI / self-fencing
 *   Has some interesting capabilities
     *   gossip potentially more resilient than full mesh
-    *   action matrix: configurable per failure mode
+    *   [action matrix: configurable per failure mode](https://youtu.be/nz4kEZcmxr4?t=8m25s)
 *   Source code not available
