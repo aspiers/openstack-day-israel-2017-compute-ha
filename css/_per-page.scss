@@ -1,11 +1,13 @@
 .reveal .slides {
-    .guidelines {
-        > p {
-            font-size: 26pt;
-        }
-
+    #editorial-guidelines {
         > ul {
             font-size: 70%;
+        }
+    }
+
+    #trademarking-guidelines {
+        > ul {
+            font-size: 80%;
         }
     }
 
@@ -88,7 +90,7 @@
         height: 80%;
 
         h2 {
-            font-size: 1.7em;
+            font-size: 3rem;
         }
 
         .inside {
@@ -105,6 +107,23 @@
             position: absolute;
             top: 80%;
             left: 8%;
+        }
+    }
+
+    #disclaimers {
+        height: 80%;
+        margin: 10% 10% 0 0;
+        text-align: left;
+
+        h3 {
+            color: white;
+            font-size: 1.8rem;
+            margin: 2rem 0 0.5 0;
+        }
+
+        p {
+            color: white;
+            font-size: 1.2rem;
         }
     }
 }

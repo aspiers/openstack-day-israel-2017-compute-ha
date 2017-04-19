@@ -1,46 +1,33 @@
-$blue-green:          rgb(  0, 111, 102);
+$SUSE-green:          rgb(  2, 211,  95);
 
-$dark-neutral:        rgb( 69,  76,  81);
-$medium-dark-neutral: rgb(106, 115, 123);
-$medium-neutral:      rgb(148, 160, 169);
-$light-neutral:       rgb(228, 229, 230);
-$tint-neutral:        rgb(239, 240, 240);
+$dark-neutral:        rgb(  0,   0,   0);
+$medium-dark-neutral: rgb( 95,  95,  95);
+$medium-neutral:      rgb(167, 169, 172);
+$light-neutral:       rgb(220, 221, 222);
+$tint-neutral:        rgb(237, 237, 237);
 
-$bright-blue:         rgb(  0, 174, 239);
-$dark-blue:           rgb(  0, 127, 178);
-$medium-blue:         rgb( 99, 202, 225);
-$light-blue:          rgb(173, 224, 238);
-$tint-blue:           rgb(221, 241, 247);
+$bright-blue:         rgb(  0, 178, 226);
+$dark-blue:           rgb( 13,  44,  64);
+$bright-royal:        rgb(  0,   7, 176);
+$light-blue:          rgb(112, 214, 224);
 
-$bright-green:        rgb(193, 216,  47);
-$dark-green:          rgb( 67, 149,  57);
-$medium-green:        rgb(122, 193,  66);
-$light-green:         rgb(208, 228, 166);
-$tint-green:          rgb(235, 246, 220);
+$bright-green:        rgb(160, 255,  95);
+$medium-green:        rgb(  0, 192,  29);
 
-$bright-orange:       rgb(248, 152,  29);
-$dark-yellow:         rgb(227, 127,  28);
-$medium-yellow:       rgb(247, 172,   7);
-$light-yellow:        rgb(255, 212,  87);
-$tint-yellow:         rgb(255, 246, 212);
+$dark-orange:         rgb(237, 105,  36);
+$medium-orange:       rgb(253, 154,  43);
+$light-yellow:        rgb(255, 239, 141);
 
-$bright-yellow:       rgb(255, 221,   0);
-$dark-teal:           rgb( 90, 154, 152);
-$medium-teal:         rgb(114, 174, 182);
-$light-teal:          rgb(195, 223, 224);
-$tint-teal:           rgb(216, 233, 232);
+$bright-teal:         rgb(  2, 164, 156);
 
-$bright-magenta:      rgb(236,   0, 140);
-$dark-purple:         rgb( 54,  60, 116);
-$medium-purple:       rgb( 84,  98, 145);
-$light-purple:        rgb(181, 187, 212);
-$tint-purple:         rgb(222, 230, 243);
-
-$bright-red:          rgb(237,  28,  36);
+$bright-magenta:      rgb(222,   0, 128);
+$light-magenta:       rgb(247, 163, 213);
+$dark-purple:         rgb( 20,  25, 105);
+$bright-purple:       rgb(132,  23, 129);
 
 ////////////////////////////////////////////////////////////////////
 
-.bg-blue-green           { background-color: $blue-green !important;          }
+.bg-SUSE-green           { background-color: $SUSE-green !important;          }
 
 .bg-dark-neutral         { background-color: $dark-neutral !important;        }
 .bg-medium-dark-neutral  { background-color: $medium-dark-neutral !important; }
@@ -50,39 +37,26 @@ $bright-red:          rgb(237,  28,  36);
 
 .bg-bright-blue          { background-color: $bright-blue !important;         }
 .bg-dark-blue            { background-color: $dark-blue !important;           }
-.bg-medium-blue          { background-color: $medium-blue !important;         }
+.bg-bright-royal         { background-color: $bright-royal !important;        }
 .bg-light-blue           { background-color: $light-blue !important;          }
-.bg-tint-blue            { background-color: $tint-blue !important;           }
 
 .bg-bright-green         { background-color: $bright-green !important;        }
-.bg-dark-green           { background-color: $dark-green !important;          }
 .bg-medium-green         { background-color: $medium-green !important;        }
-.bg-light-green          { background-color: $light-green !important;         }
-.bg-tint-green           { background-color: $tint-green !important;          }
 
-.bg-bright-orange        { background-color: $bright-orange !important;       }
-.bg-dark-yellow          { background-color: $dark-yellow !important;         }
-.bg-medium-yellow        { background-color: $medium-yellow !important;       }
+.bg-dark-orange          { background-color: $dark-orange !important;         }
+.bg-medium-orange        { background-color: $medium-orange !important;       }
 .bg-light-yellow         { background-color: $light-yellow !important;        }
-.bg-tint-yellow          { background-color: $tint-yellow !important;         }
 
-.bg-bright-yellow        { background-color: $bright-yellow !important;       }
-.bg-dark-teal            { background-color: $dark-teal !important;           }
-.bg-medium-teal          { background-color: $medium-teal !important;         }
-.bg-light-teal           { background-color: $light-teal !important;          }
-.bg-tint-teal            { background-color: $tint-teal !important;           }
+.bg-bright-teal          { background-color: $bright-teal !important;         }
 
 .bg-bright-magenta       { background-color: $bright-magenta !important;      }
+.bg-light-magenta        { background-color: $light-magenta !important;       }
+.bg-bright-purple        { background-color: $bright-purple !important;       }
 .bg-dark-purple          { background-color: $dark-purple !important;         }
-.bg-medium-purple        { background-color: $medium-purple !important;       }
-.bg-light-purple         { background-color: $light-purple !important;        }
-.bg-tint-purple          { background-color: $tint-purple !important;         }
-
-.bg-bright-red           { background-color: $bright-red !important;          }
 
 ////////////////////////////////////////////////////////////////////
 
-.fg-blue-green           { color: $blue-green !important;          }
+.fg-SUSE-green           { color: $SUSE-green !important;          }
 
 .fg-dark-neutral         { color: $dark-neutral !important;        }
 .fg-medium-dark-neutral  { color: $medium-dark-neutral !important; }
@@ -92,32 +66,19 @@ $bright-red:          rgb(237,  28,  36);
 
 .fg-bright-blue          { color: $bright-blue !important;         }
 .fg-dark-blue            { color: $dark-blue !important;           }
-.fg-medium-blue          { color: $medium-blue !important;         }
+.fg-bright-royal         { color: $bright-royal !important;        }
 .fg-light-blue           { color: $light-blue !important;          }
-.fg-tint-blue            { color: $tint-blue !important;           }
 
 .fg-bright-green         { color: $bright-green !important;        }
-.fg-dark-green           { color: $dark-green !important;          }
 .fg-medium-green         { color: $medium-green !important;        }
-.fg-light-green          { color: $light-green !important;         }
-.fg-tint-green           { color: $tint-green !important;          }
 
-.fg-bright-orange        { color: $bright-orange !important;       }
-.fg-dark-yellow          { color: $dark-yellow !important;         }
-.fg-medium-yellow        { color: $medium-yellow !important;       }
+.fg-dark-orange          { color: $dark-orange !important;         }
+.fg-medium-orange        { color: $medium-orange !important;       }
 .fg-light-yellow         { color: $light-yellow !important;        }
-.fg-tint-yellow          { color: $tint-yellow !important;         }
 
-.fg-bright-yellow        { color: $bright-yellow !important;       }
-.fg-dark-teal            { color: $dark-teal !important;           }
-.fg-medium-teal          { color: $medium-teal !important;         }
-.fg-light-teal           { color: $light-teal !important;          }
-.fg-tint-teal            { color: $tint-yellow !important;         }
+.fg-bright-teal          { color: $bright-teal !important;         }
 
 .fg-bright-magenta       { color: $bright-magenta !important;      }
+.fg-light-magenta        { color: $light-magenta !important;       }
+.fg-bright-purple        { color: $bright-purple !important;       }
 .fg-dark-purple          { color: $dark-purple !important;         }
-.fg-medium-purple        { color: $medium-purple !important;       }
-.fg-light-purple         { color: $light-purple !important;        }
-.fg-tint-purple          { color: $tint-purple !important;         }
-
-.fg-bright-red           { color: $bright-red !important;          }

@@ -1,58 +1,43 @@
-<!-- .slide: data-state="section-break" id="template-slides" data-timing="10s" -->
-# Template slides
-## `<h2>` works here too
+<!-- .slide: data-state="cover" id="cover-page" data-timing="20" -->
+<div class="title">
+    <h1>Presentation Title</h1>
+    <h2>Subhead or Second Line</h2>
+</div>
+
+<div class="presenter">
+    <h3 class="name">Presenter Name</h3>
+    <h3 class="job-title">Job Title</h3>
+    <h3 class="email"><a href="mailto:firstname.lastname@suse.com">firstname.lastname@suse.com</a></h3>
+</div>
 
 
-<!-- .slide: data-state="normal" id="nested-lists" data-timing="20s" -->
-## Title of No-Logo Slide Here
+<!-- .slide: data-state="normal" id="nested-lists" data-timing="20s" data-menu-title="Standard text slide" -->
+## Slide title
 
 *   First-level bullet
     *   Second-level bullet
-        *   Third-level bullet
-            *   Fourth-level bullet
+        *   Third-level bullets are a bad idea
+            *   Fourth-level bullets are a terrible idea
+
+Before loading up your presentation with bulleted lists, make sure to
+[read up on whether that's a good idea](https://www.google.com/search?q=slides+bullets).
 
 
-<!-- .slide: data-state="normal" id="graphics-and-typeface" data-timing="60s" -->
-## Graphics and Typeface
+<!-- .slide: data-state="section-break" id="section-break-1" data-timing="10s" -->
+# Section break (style 1)
+## `<h2>` works here too
 
-<div class="slide-section">
-    <h3> Primary Icon Color </h3>
-    <img src="images/SUSE/bars.png" style="width: 150px;" />
-    <img src="images/SUSE/disk.png" style="width:  80px;" />
-    <div class="icons-typeface">
-        <p>
-            <b>Icons:</b> Icon libraries are available for download in
-            bubble and 3-D designs. The primary color for SUSE is
-            green.
-        </p>
-        <p>
-            <b>Typeface:</b> Arial is the typeface for all SUSE
-            presentations.
-        </p>
-    </div>
-</div>
-<div class="slide-section">
-    <h3> Bubble </h3>
-    <img src="images/SUSE/folder.png" style="width:  100px;" />
-    <img src="images/SUSE/computer.png" style="width:  100px;" />
-    <img src="images/SUSE/right-arrow.png" style="width:  100px;" />
-    <img src="images/SUSE/squeeze-arrows.png" style="width:  100px;" />
-    <img src="images/SUSE/USB.png" style="width:  100px;" />
-    <img src="images/SUSE/bug.png" style="width:  100px;" />
-    <img src="images/SUSE/cylinder.png" style="width:  100px;" />
-    <img src="images/SUSE/brain.png" style="width:  100px;" />
-</div>
-<div class="slide-section">
-    <h3> 3D </h3>
-    <img src="images/SUSE/desktop-computer.png" style="width:  80px;" />
-    <img src="images/SUSE/pie.png" style="width:  80px;" />
-    <img src="images/SUSE/meters.png" style="width:  80px;" />
-    <img src="images/SUSE/office.png" style="width:  80px;" />
-    <img src="images/SUSE/printer.png" style="width:  80px;" />
-    <img src="images/SUSE/box.png" style="width:  80px;" />
-    <img src="images/SUSE/app-window.png" style="width:  80px;" />
-    <img src="images/SUSE/darts.png" style="width:  80px;" />
-</div>
+
+<!-- .slide: data-state="section-break-2" id="template-slides-2" data-timing="10s" -->
+# Section break (style 2)
+
+
+<!-- .slide: data-state="section-break-3" id="template-slides-3" data-timing="10s" -->
+# Section break (style 3)
+
+
+<!-- .slide: data-state="section-break-4" id="template-slides-4" data-timing="10s" -->
+# Section break (style 4)
 
 
 <!-- .slide: data-state="normal" id="syntax-highlighting" -->
@@ -80,17 +65,3 @@ def ping! node
   result, :foo
 end
 ```
-
-
-<!-- .slide: data-state="normal" id="call-to-action" data-menu-title="Call to action" -->
-<div class="call-to-action">
-    <h2 class="inside">
-        Call to action line one <br />
-        and call to action line two <br />
-        <a href="http://www.calltoaction.com">www.calltoaction.com</a>
-    </h2>
-
-    <h2 class="outside">
-        Thank you.
-    </h2>
-</div>
