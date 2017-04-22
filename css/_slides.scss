@@ -171,9 +171,12 @@
         }
     }
 
-    .warning-footer {
+    .internal-use-footer {
         font-size: 1.4rem;
-        color: red;
-        text-align: centre;
+        color: $bright-magenta;
+        font-weight: bold;
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
     }
 }

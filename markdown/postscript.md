@@ -80,7 +80,7 @@ owners.
     </div>
 </div>
 
-<div class="warning-footer">
+<div class="internal-use-footer" style="text-align: center;">
     For Internal Use Only
 </div>
 
@@ -89,6 +89,10 @@ owners.
 ## Internal slide title
 
 *   First-level bullet
+
+<div class="internal-use-footer">
+    For Internal Use Only
+</div>
 
 
 <!-- .slide: data-menu-title="License" id="license" data-state="blank-slide" -->
