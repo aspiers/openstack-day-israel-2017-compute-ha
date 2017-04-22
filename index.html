@@ -19,11 +19,10 @@
 <body>
     <div class="reveal">
         <div class="slides">
-            <section data-menu-title="QR code"
-                     data-state="qrcode">
-                <div class="qrcode" id="qrcode-talk"/>
-                <h2><a href="https://example.com/link/to/this/talk" target="_blank"
-                       id="talk">https://example.com/link/to/this/talk</a></h2>
+            <section data-markdown="markdown/meta.md"
+                     data-separator="^\n\n\n"
+                     data-separator-vertical="^\n\n"
+                     data-separator-notes="^Note:">
             </section>
             <section data-markdown="markdown/slide-guidelines.md"
                      data-separator="^\n\n\n"
@@ -43,11 +42,11 @@
         </div>
     </div>
 
-    <script src="qrcodejs/qrcode.js"></script>
-    <script src="js/qrcode.js"></script>
-
     <script src="reveal.js/lib/js/head.min.js"></script>
     <script src="reveal.js/js/reveal.js"></script>
     <script src="js/reveal.js"></script>
+
+    <script src="qrcodejs/qrcode.js"></script>
+    <script src="js/qrcode.js"></script>
 </body>
 </html>
