@@ -4,10 +4,17 @@
     <h2>Guidelines and Template</h2>
 </div>
 
-<div class="presenter">
-    <h3 class="name">Presenter Name</h3>
-    <h3 class="job-title">Job Title</h3>
-    <h3 class="email"><a href="mailto:firstname.lastname@suse.com">firstname.lastname@suse.com</a></h3>
+<div class="row presenters">
+    <div class="presenter presenter-1">
+        <h3 class="name">First Presenter's Name</h3>
+        <h3 class="job-title">Job Title</h3>
+        <h3 class="email"><a href="mailto:firstname.lastname@suse.com">firstname.lastname@suse.com</a></h3>
+    </div>
+    <div class="presenter presenter-2">
+        <h3 class="name">Second Presenter's Name</h3>
+        <h3 class="job-title">Job Title</h3>
+        <h3 class="email"><a href="mailto:firstname.lastname@suse.com">firstname.lastname@suse.com</a></h3>
+    </div>
 </div>
 
 

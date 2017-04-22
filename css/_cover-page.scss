@@ -13,7 +13,7 @@
             url(../images/SUSE/SUSE-logo-white.png)
                10% 11%              //  x/y positions
              / 11% 11%              //  x/y sizes
-               no-repeat,
+                no-repeat,
             url(../images/SUSE/bg-green.png)
                 50% #{$y-offset}    //  x/y positions
               / $width $bg-height   //  x/y sizes
@@ -41,9 +41,20 @@
             }
         }
 
-        .presenter {
+        .presenters {
             position: absolute;
             top: 78%;
+            width: 100%;
+
+            .presenter {
+                width: 50%;
+                position: absolute;
+            }
+
+            .presenter-2 {
+                left: 50%;
+            }
+
             h1, h2, h3, h4, h5, h6 {
                 color: white;
                 a {
