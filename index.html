@@ -1,5 +1,5 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
+<head>
     <title></title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -11,10 +11,6 @@
     <link rel="stylesheet" href="reveal.js/css/theme/simple.css"/>
     <link rel="stylesheet" href="css/reveal-override.css"/>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <script src="qrcodejs/jquery.min.js"></script>
-
     <!-- Printing and PDF exports -->
     <script>
      var link = document.createElement( 'link' );
@@ -25,155 +21,74 @@
                  'reveal.js/css/print/paper.css';
      document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
-  </head>
-  <body>
+</head>
+<body>
     <div class="reveal">
-      <div class="slides">
-        <section data-markdown="markdown/intro.md"
-                 data-separator="^\n\n\n"
-                 data-separator-vertical="^\n\n"
-                 data-separator-notes="^Note:">
-        </section>
-        <section data-markdown="markdown/HA-today.md"
-                 data-separator="^\n\n\n"
-                 data-separator-vertical="^\n\n"
-                 data-separator-notes="^Note:">
-        </section>
-        <section data-markdown="markdown/when-compute-HA.md"
-                 data-separator="^\n\n\n"
-                 data-separator-vertical="^\n\n"
-                 data-separator-notes="^Note:">
-        </section>
-        <section data-markdown="markdown/architecture.md"
-                 data-separator="^\n\n\n"
-                 data-separator-vertical="^\n\n"
-                 data-separator-notes="^Note:">
-        </section>
-        <section data-markdown="markdown/terminology.md"
-                 data-separator="^\n\n\n"
-                 data-separator-vertical="^\n\n"
-                 data-separator-notes="^Note:">
-        </section>
-        <section data-markdown="markdown/FOSS-solutions.md"
-                 data-separator="^\n\n\n"
-                 data-separator-vertical="^\n\n"
-                 data-separator-notes="^Note:">
-        </section>
-        <section data-markdown="markdown/proprietary-solutions.md"
-                 data-separator="^\n\n\n"
-                 data-separator-vertical="^\n\n"
-                 data-separator-notes="^Note:">
-        </section>
-        <section data-markdown="markdown/advice.md"
-                 data-separator="^\n\n\n"
-                 data-separator-vertical="^\n\n"
-                 data-separator-notes="^Note:">
-        </section>
-        <section data-markdown="markdown/future.md"
-                 data-separator="^\n\n\n"
-                 data-separator-vertical="^\n\n"
-                 data-separator-notes="^Note:">
-        </section>
-        <section data-markdown="markdown/community.md"
-                 data-separator="^\n\n\n"
-                 data-separator-vertical="^\n\n"
-                 data-separator-notes="^Note:">
-        </section>
-        <section data-markdown="markdown/postscript.md"
-                 data-separator="^\n\n\n"
-                 data-separator-vertical="^\n\n"
-                 data-separator-notes="^Note:">
-        </section>
-      </div>
+        <div class="slides">
+            <section data-markdown="markdown/intro.md"
+                     data-separator="^\n\n\n"
+                     data-separator-vertical="^\n\n"
+                     data-separator-notes="^Note:">
+            </section>
+            <section data-markdown="markdown/HA-today.md"
+                     data-separator="^\n\n\n"
+                     data-separator-vertical="^\n\n"
+                     data-separator-notes="^Note:">
+            </section>
+            <section data-markdown="markdown/when-compute-HA.md"
+                     data-separator="^\n\n\n"
+                     data-separator-vertical="^\n\n"
+                     data-separator-notes="^Note:">
+            </section>
+            <section data-markdown="markdown/architecture.md"
+                     data-separator="^\n\n\n"
+                     data-separator-vertical="^\n\n"
+                     data-separator-notes="^Note:">
+            </section>
+            <section data-markdown="markdown/terminology.md"
+                     data-separator="^\n\n\n"
+                     data-separator-vertical="^\n\n"
+                     data-separator-notes="^Note:">
+            </section>
+            <section data-markdown="markdown/FOSS-solutions.md"
+                     data-separator="^\n\n\n"
+                     data-separator-vertical="^\n\n"
+                     data-separator-notes="^Note:">
+            </section>
+            <section data-markdown="markdown/proprietary-solutions.md"
+                     data-separator="^\n\n\n"
+                     data-separator-vertical="^\n\n"
+                     data-separator-notes="^Note:">
+            </section>
+            <section data-markdown="markdown/advice.md"
+                     data-separator="^\n\n\n"
+                     data-separator-vertical="^\n\n"
+                     data-separator-notes="^Note:">
+            </section>
+            <section data-markdown="markdown/future.md"
+                     data-separator="^\n\n\n"
+                     data-separator-vertical="^\n\n"
+                     data-separator-notes="^Note:">
+            </section>
+            <section data-markdown="markdown/community.md"
+                     data-separator="^\n\n\n"
+                     data-separator-vertical="^\n\n"
+                     data-separator-notes="^Note:">
+            </section>
+            <section data-markdown="markdown/postscript.md"
+                     data-separator="^\n\n\n"
+                     data-separator-vertical="^\n\n"
+                     data-separator-notes="^Note:">
+            </section>
+        </div>
     </div>
-
-    <script src="qrcodejs/qrcode.js"></script>
-    <script>
-/* Grab all links and iterate over them */
-var sources = document.getElementsByTagName('a');
-n = sources.length;
-for (var i = 0; i < n; i++) {
-    var source = sources[i];
-    var href = source.href;
-
-    /* If the link has no href attribute, skip it */
-    if (href) {
-        var target_id = "qrcode-" + source.id ;
-        var target = document.getElementById(target_id);
-        /* If the source has no corresponding target element, skip
-         * it */
-        if (target) {
-            var qr = new QRCode(target, {
-                colorDark : "#000000",
-                colorLight : "rgba(255,255,255,0)",
-            });
-            qr.makeCode(href);
-        }
-    }
-}
-    </script>
 
     <script src="reveal.js/lib/js/head.min.js"></script>
     <script src="reveal.js/js/reveal.js"></script>
+    <script src="js/reveal.js"></script>
 
-    <script>
-// Full list of configuration options available here:
-// https://github.com/hakimel/reveal.js#configuration
-Reveal.initialize({
-    // If you change these, make sure $aspect-ratio in the .scss file
-    // is updated accordingly:
-    width: 1600,
-    height: 900,
-
-    margin: 0.01,
-
-    keyboard: {
-         // http://www.cambiaresearch.com/articles/15/javascript-key-codes
-        37: 'prev', // cursor left
-                    // 38 is cursor up
-        39: 'next'  // cursor right
-                    // 40 is cursor down
-    },
-    controls: false,
-    slideNumber: false,
-    progress: true,
-    history: true,
-    center: false,
-
-    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-    transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
-
-    menu: {
-        themes: false,
-        transitions: false,
-        openButton: false,
-        openSlideNumber: true,
-        markers: true
-    },
-
-    // Optional libraries used to extend on reveal.js
-    dependencies: [
-        { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-        { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-        { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-        { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-        { src: 'reveal.js-menu/menu.js', async: true, condition: function() { return !!document.body.classList; } }
-    ]
-});
-
-      // If we wanted mouse clicks to advance to next / previous slides, this is
-      // how we'd do it:
-
-      // window.addEventListener("mousedown", handleClick, false);
-      // window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
-      function handleClick(e) {
-          e.preventDefault();
-          if(e.button === 0) Reveal.next();
-          // if(e.button === 2) Reveal.prev();
-      }
-    </script>
+    <script src="qrcodejs/qrcode.js"></script>
+    <script src="js/qrcode.js"></script>
     <script src="js/animateCss.js"></script>
-  </body>
+</body>
 </html>

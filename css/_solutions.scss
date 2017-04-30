@@ -58,15 +58,15 @@
         }
 
         .criterion-class.policy {
-            background-color: $medium-blue;
+            background-color: $bright-blue;
         }
 
         .criterion-class.resilience {
-            background-color: $medium-teal;
+            background-color: $bright-teal;
         }
 
         .criterion-class.recovery {
-            background-color: $medium-purple;
+            background-color: $bright-magenta;
         }
 
         td.criterion-class div {
@@ -100,7 +100,7 @@
         }
 
         td.maybe {
-            background-color: $bright-orange;
+            background-color: $medium-orange;
         }
 
         td.no {

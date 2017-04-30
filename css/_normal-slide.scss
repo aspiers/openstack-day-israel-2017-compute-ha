@@ -1,22 +1,19 @@
 // Styling for normal slides
 
 .normal .reveal {
-    $strip-x-offset: 2.5;
-    $strip-width: 100% - (2 * $strip-x-offset);
+    $slide-width: 100% - 2 * $section-left-margin;
 
     .slides {
-        $strip-height: 4%;
-        $y-offset: (100% - $strip-height) * 100% / (100% - $strip-height);
         background:
-            url(../images/SUSE/green-strip.png)
-                50% #{$y-offset}      // x/y positions
-              / $strip-width $strip-height  // x/y sizes
+            url(../images/SUSE/vertical-green-strip.png)
+                0% 0%       // x/y positions
+              / 4.5% 100%   // x/y sizes
                 no-repeat;
 
         text-align: inherit;
 
         > section {
-            width: 100% - 2 * $section-left-margin;
+            width: $slide-width;
         }
 
         h1 {
@@ -36,16 +33,5 @@
         }
     }
 
-    .slide-number {
-        left: 0;
-        bottom: 0;
-        width: $strip-width;
-        margin-left: $strip-x-offset + 2%;
-        font-size: 7pt;
-        background-color: transparent;
-        color: black;
-        span {
-            font-size: 3em;
-        }
-    }
+    @include slide-numbers;
 }

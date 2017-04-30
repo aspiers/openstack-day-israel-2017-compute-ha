@@ -28,12 +28,12 @@ sanctioned presentation slide-deck colours.
     .lang-django .hljs-template_tag,
     .lang-django .hljs-variable,
     .lang-django .hljs-filter .hljs-argument {
-        color: $medium-blue;
+        color: $bright-blue;
     }
 
     .hljs-number,
     .hljs-date {
-        color: $dark-green;
+        color: $SUSE-green;
     }
 
     .lang-dos .hljs-envvar,
@@ -50,7 +50,7 @@ sanctioned presentation slide-deck colours.
     .python .hljs-built_in,
     .hljs-literal,
     .tex .hljs-special {
-        color: $medium-yellow;
+        color: $dark-orange;
     }
 
     .diff .hljs-chunk,
@@ -68,7 +68,7 @@ sanctioned presentation slide-deck colours.
     .nginx .hljs-built_in,
     .tex .hljs-command,
     .hljs-prompt {
-        color: $bright-orange;
+        color: $medium-orange;
         font-weight: bold !important;
     }
 
@@ -94,7 +94,7 @@ sanctioned presentation slide-deck colours.
     .lang-apache .hljs-cbracket,
     .tex .hljs-formula,
     .lang-coffeescript .hljs-attribute {
-        color: $dark-teal;
+        color: $bright-teal;
     }
 
     .hljs-shebang,
@@ -117,6 +117,6 @@ sanctioned presentation slide-deck colours.
     }
 
     .hljs-constant {
-        color: $dark-teal;
+        color: $bright-teal;
     }
 }

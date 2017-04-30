@@ -3,11 +3,14 @@
 @import '_variables';
 @import '_mixins';
 @import '_suse-colors';
+@import '_unofficial-colors';
 
 .reveal {
     h1, h2, h3, h4, h5, h6, div, span {
         font-family: "Arial", sans-serif;
     }
+
+    font-size: 2rem;
 
     @import '_slides';
 
@@ -100,6 +103,7 @@
 @import '_normal-slide';
 @import '_color-palette';
 @import '_section-break';
+@import '_green-bg';
 @import '_blank-slide';
 @import '_suse-syntax-highlighting';
 @import '_per-page';

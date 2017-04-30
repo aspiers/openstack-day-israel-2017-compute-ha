@@ -10,6 +10,7 @@ $aspect-ratio: $slide-width / $slide-height;
 
 $section-left-margin: 8%;
 $section-top-margin: 5%;
+$section-width: 100% - 2 * $section-left-margin;
 $section-height: 100% - 2 * $section-top-margin;
 $section-width: 100% - 2 * $section-left-margin;
 
