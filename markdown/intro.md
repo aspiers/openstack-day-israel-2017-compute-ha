@@ -28,7 +28,7 @@
 
 *   Compute plane HA vs. control plane HA
 *   Does OpenStack need compute plane HA?
-*   Architectural challenges
+*   Design goals
 *   Existing solutions
 *   Current and future work
 *   How to get involved
