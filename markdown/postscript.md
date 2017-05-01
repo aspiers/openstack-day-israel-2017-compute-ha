@@ -1,9 +1,13 @@
-<!-- .slide: data-state="section-break" data-menu-title="Q & A" id="Q-and-A" data-timing="300" -->
+<!-- .slide: data-state="normal" id="questions" data-menu-title="Q & A" data-timing="300" -->
 # Questions?
+
+<div class="qrcode" id="qrcode-talk-end"/>
+<h3><a href="https://aspiers.github.io/openstack-summit-2017-boston-compute-ha/" target="_blank"
+       id="talk-end">https://aspiers.github.io/openstack-summit-2017-boston-compute-ha/</a></h3>
+
 
 
 <!-- .slide: data-menu-title="Disclaimers" id="disclaimers" data-state="green-bg" -->
-
 ### Unpublished Work of SUSE LLC. All Rights Reserved.
 
 This work is an unpublished work and contains confidential,

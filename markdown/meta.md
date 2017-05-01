@@ -14,5 +14,5 @@
 <!-- .slide: data-state="qrcode" id="qrcode" data-menu-title="QR code" data-timing="0" -->
 
 <div class="qrcode" id="qrcode-talk"/>
-<h2><a href="https://aspiers.github.io/openstack-summit-2017-boston-compute-ha/" target="_blank"
-       id="talk">https://aspiers.github.io/openstack-summit-2017-boston-compute-ha/</a></h2>
+<h3><a href="https://aspiers.github.io/openstack-summit-2017-boston-compute-ha/" target="_blank"
+       id="talk">https://aspiers.github.io/openstack-summit-2017-boston-compute-ha/</a></h3>
