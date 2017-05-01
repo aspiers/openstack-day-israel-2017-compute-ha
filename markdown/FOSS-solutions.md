@@ -102,10 +102,12 @@ Note:
 
 *   Monitors VM health (externally)
 *   More sophisticated recovery workflows
+*   API provides operability
+*   Conforms to OpenStack standards
 
 ### Cons
 
-*   Looser integration with pacemaker
+*   Duplicates Pacemaker's host monitoring and process management
 
 Note:
 - Failing `nova-compute` service will be disabled
@@ -195,104 +197,4 @@ Describe problem with mistral HA
 Note:
 Whole workflow should start with nova mark-host-down if fencing was before
 repeat is not forever
-
-
-<!-- .slide: data-state="normal" id="mistral-mark-vms" data-menu-title="Mistral mark VMS" data-timing="20"-->
-## Marking VMs as pets
-```
-$ nova meta very_important_VM set evacuate=true
-$ nova flavor-key very_important_flavor set evacuation:evacuate=true
-```
-
-Note:
-Two ways of marking vms
-Prefix in flavor is important; without it if we try to schedule vm with 'very important flavor' nova-scheduler would try to find aggregate with 'evacuate' capability - as a result vm will end up in error state
-
-
-<!-- .slide: data-state="blank" id="mistral-demo" data-menu-title="mistral demo" data-timing="160" -->
-<iframe data-src="https://www.youtube.com/embed/Pyl3H-fSrFo"
-        class="full-screen" frameborder="0" allowfullscreen></iframe>
-
-
-<!-- .slide: data-state="normal" id="comparison" data-menu-title="Comparison" data-timing="30" -->
-## F/OSS solution functionality comparison
-
-<table class="waffle" cellspacing="0" cellpadding="0">
-  <thead>
-    <tr>
-      <th class="criterion-class">
-        <div></div>
-      </th>
-      <th class="criteria" />
-      <th>OCF Agents</th>
-      <th>Masakari</th>
-      <th>Mistral</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="criterion-class policy" rowspan="2">
-        <div>Policy</div>
-      </td>
-      <td class="criteria">Support for tagging VM for evacuation</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td class="criteria">Customizable actions based on failure</td>
-      <td class="no">No</td>
-      <td class="no">No</td>
-      <td class="no">Planned (via Congress)</td>
-    </tr>
-    <tr>
-      <td class="criterion-class resilience" rowspan="2">
-        <div>Resilience</div>
-      </td>
-      <td class="criteria">Service is self-resilient</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="maybe">In progress</td>
-    </tr>
-    <tr>
-      <td class="criteria">Monitoring of VM's (external) health</td>
-      <td class="no">No</td>
-      <td class="yes">Yes</td>
-      <td class="no">Planned</td>
-    </tr>
-    <tr>
-      <td class="criterion-class recovery" rowspan="4">
-        <div>Recovery</div>
-      </td>
-      <td class="criteria">Uses force-down API</td>
-      <td class="yes">Yes</td>
-      <td class="no">No</td>
-      <td class="no">Planned</td>
-    </tr>
-    <tr>
-      <td class="criteria">Disable failed `nova‑compute`</td>
-      <td class="no">No</td>
-      <td class="yes">Yes</td>
-      <td class="no">Planned</td>
-    </tr>
-    <tr>
-      <td class="criteria">Fully parallel workflow</td>
-      <td class="no">No</td>
-      <td class="no">No</td>
-      <td class="yes">Yes</td>
-    </tr>
-  </tbody>
-</table>
-
-Note:
-
-*   Left column groups capabilities into 3 categories
-*   Policy-based workflows via Congress
-*   Two capabilities uniquely in masakari which need to be in
-    future solutions
-
-Common functionality:
-*   Tolerate simultaneous failures in compute / control planes
-*   Retry failed evacuations
-*   Monitor node and hypervisor health
 
