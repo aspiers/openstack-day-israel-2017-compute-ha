@@ -33,31 +33,8 @@ Note:
     *   Start waits for recovery to complete
 
 
-<!-- .slide: data-state="normal" id="RHEL-OSP-article" data-timing="30" -->
-## RHEL OSP support
-
-<div class="row">
-    <div class="col-md-6 article">
-        <a href="https://access.redhat.com/documentation/en/red-hat-openstack-platform/8/high-availability-for-compute-instances/chapter-1-use-high-availability-to-protect-instances">
-            <img alt="Article on setting up compute HA with RHEL OSP" class="full-slide"
-                 data-src="images/RHEL-OSP-HA-article.png" />
-        </a>
-    </div>
-    <div class="col-md-6 instructions">
-        <a href="https://access.redhat.com/documentation/en/red-hat-openstack-platform/8/high-availability-for-compute-instances/chapter-1-use-high-availability-to-protect-instances">
-            <img alt="Article on setting up compute HA with RHEL OSP" class="full-slide"
-                 data-src="images/RHEL-OSP-HA-instructions.png" />
-        </a>
-    </div>
-</div>
-
-Note:
-OCF RA approach is supported in RHEL OSP. Setup is manual;
-here is a fragment of [the installation instructions](https://access.redhat.com/documentation/en/red-hat-openstack-platform/8/high-availability-for-compute-instances/chapter-1-use-high-availability-to-protect-instances).
-
-
 <!-- .slide: data-state="blank" id="SOC-demo" data-menu-title="SOC demo" data-timing="200" -->
-<iframe data-src="https://www.youtube.com/embed/7pgHFoGquxU"
+<iframe data-src="https://www.youtube.com/embed/OrsiP86rGM8"
         class="full-screen" frameborder="0" allowfullscreen></iframe>
 
 
@@ -229,22 +206,12 @@ $ nova flavor-key very_important_flavor set evacuation:evacuate=true
 
 Note:
 Two ways of marking vms
-Prefix in flaovor is important; without it if we try to schedule vm with 'very important flavor' nova-scheduler would try to find agregate with 'evacuate' capability - as a result vm will end up in error state
+Prefix in flavor is important; without it if we try to schedule vm with 'very important flavor' nova-scheduler would try to find aggregate with 'evacuate' capability - as a result vm will end up in error state
 
 
 <!-- .slide: data-state="blank" id="mistral-demo" data-menu-title="mistral demo" data-timing="160" -->
 <iframe data-src="https://www.youtube.com/embed/Pyl3H-fSrFo"
         class="full-screen" frameborder="0" allowfullscreen></iframe>
-
-
-<!-- .slide: data-state="normal" id="senlin" data-timing="60"-->
-# Senlin
-
-*   https://wiki.openstack.org/wiki/Senlin
-*   Clustering service for OpenStack
-*   Orchestration of collections of similar objects
-*   Policies for placement / load-balancing / health / scaling etc.
-*   Fencing and resurrection not implemented yet
 
 
 <!-- .slide: data-state="normal" id="comparison" data-menu-title="Comparison" data-timing="30" -->

@@ -1,5 +1,7 @@
-<!-- .slide: data-state="section-break" id="HA-today" data-timing="5" -->
-# HA in OpenStack today
+<!-- .slide: data-state="section-break" id="compute-vs-control" data-timing="5" -->
+# Compute plane HA
+## vs.
+# control plane HA
 
 
 <!-- .slide: data-state="normal" id="control-plane" class="diagram-and-list" data-timing="20" -->

@@ -45,33 +45,6 @@ Clouds will often scale to *many* compute nodes
 - 100s, or even 1000s
 
 
-<!-- .slide: data-state="normal" id="peer-to-peer" class="scalability" data-menu-title="Full mesh clusters" data-timing="20" -->
-## Full mesh clusters don't scale
-
-<figure>
-    <img alt="fully connected mesh network"
-         data-src="images/full-mesh-network.svg" />
-</figure>
-
-Note:
-
-Typical clustering software uses fully connected mesh topology, which
-doesn't scale to a large number of nodes, e.g. `corosync` supports a
-maximum of 32 nodes.
-
-
-<!-- .slide: data-state="normal" id="scalability-workarounds" class="scalability" data-menu-title="Bad workarounds" data-timing="30" -->
-## Addressing Scalability
-
-The obvious workarounds are *ugly*!
-
-*   Multiple compute clusters introduce unwanted artificial boundaries
-*   Clusters inside / between guest VM instances are not OS-agnostic,
-    and require cloud users to modify guest images (installing & configuring cluster software)
-*   <span class="fg-bright-orange bold">Cloud is supposed to make things
-    easier not harder!</span>
-
-
 <!-- .slide: data-state="normal" id="common-architecture" data-menu-title="Architecture" class="architecture" data-timing="40" -->
 ## Common architecture
 
