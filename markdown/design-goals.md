@@ -160,10 +160,6 @@ with different workflows.
 *   Optional use of host reservation to ensure minimum level of redundancy
 *   Retry thresholds on recovery of processes and VM instances
 *   Configurable workflows?
-*   If `nova-compute` fails, VMs are still perfectly healthy
-    but unmanageable
-    *   Should they be automatically killed?  Depends on
-        the workload.
 
 Note: There is no one-size-fits-all solution to compute HA.
 
@@ -182,8 +178,34 @@ don't make life hard for (existing customers of) SUSE, NTT, Red Hat,
 or anyone else using upstream solution
 
 
-<!-- .slide: data-state="normal" id="context-aware" data-menu-title="Context-ware recovery" data-timing="60" -->
-## Design goal: Context-aware recovery
+<!-- .slide: data-state="normal" id="context-aware" data-menu-title="Context-aware recovery" data-timing="60" -->
+## Design goal: Intelligent, Context-aware Recovery
 
+*   If `nova-compute` fails, VMs are still perfectly healthy
+    but unmanageable
+    *   Should they be automatically killed?  Depends on
+        the workload.
+*   Fault deduplication
+    *   VM recovery and host recovery could potentially happen within
+        small time window and collide
 *   Set host to maintenance mode until recovery is complete
 *   Respect ephemeral storage boundaries where applicable
+
+
+<!-- .slide: data-state="normal" id="performance" data-menu-title="Performance" data-timing="60" -->
+## Design goal: Performance
+
+*   Quick response to failures
+    *   Notifications on message bus to ensure recovery workflows are
+        triggered ASAP (instead of polling to start workflows)
+*   Fault prioritization
+
+
+<!-- .slide: data-state="normal" id="performance" data-menu-title="Conformance" data-timing="60" -->
+## Design goal: Conformance to OpenStack standards
+
+*   Python
+*   `oslo.*`
+*   StackForge
+*   gerrit
+*   CI with unit tests
