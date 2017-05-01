@@ -61,63 +61,43 @@ Scalability issue solved by `pacemaker_remote`
              data-src="images/explosion.svg" />
     </span>
     <span class="fragment" data-fragment-index="2">
-        <img class="fragment fade-out fence"
-             data-fragment-index="3"
-             alt="fencing dead compute node"
-             data-src="images/cross.svg" />
-        <img class="fragment fade-out migration"
-             data-fragment-index="3"
-             alt="resurrecting dead VMs elsewhere"
-             data-src="images/migration-arrow.svg" />
-    </span>
-    <span class="fragment" data-fragment-index="3">
         <img class="fragment fade-out kernel bang"
-             data-fragment-index="4"
+             data-fragment-index="3"
              alt="kernel / OS crash or hang"
              data-src="images/explosion.svg" />
     </span>
-    <span class="fragment" data-fragment-index="4">
-        <img class="fragment fade-out fence"
-             data-fragment-index="5"
-             alt="fencing dead compute node"
-             data-src="images/cross.svg" />
-        <img class="fragment fade-out migration"
-             data-fragment-index="5"
-             alt="resurrecting dead VMs elsewhere"
-             data-src="images/migration-arrow.svg" />
-    </span>
-    <span class="fragment" data-fragment-index="5">
+    <span class="fragment" data-fragment-index="3">
         <img class="fragment fade-out libvirt bang"
-             data-fragment-index="6"
+             data-fragment-index="4"
              alt="libvirt crash or hang"
              data-src="images/explosion.svg" />
     </span>
-    <span class="fragment" data-fragment-index="6">
+    <span class="fragment" data-fragment-index="4">
         <img class="fragment fade-out nova-compute bang"
-             data-fragment-index="7"
+             data-fragment-index="5"
              alt="nova-compute crash or hang"
              data-src="images/explosion.svg" />
     </span>
-    <span class="fragment" data-fragment-index="7">
+    <span class="fragment" data-fragment-index="5">
         <img class="fragment fade-out nova-api bang"
-             data-fragment-index="8"
+             data-fragment-index="6"
              alt="nova-api crash or hang"
              data-src="images/explosion.svg" />
     </span>
-    <span class="fragment" data-fragment-index="8">
+    <span class="fragment" data-fragment-index="6">
         <img class="fragment fade-out recovery bang"
-             data-fragment-index="9"
+             data-fragment-index="7"
              alt="recovery controller crash or hang"
              data-src="images/explosion.svg" />
     </span>
-    <span class="fragment" data-fragment-index="9">
+    <span class="fragment" data-fragment-index="7">
         <img class="fragment fade-out VM bang"
-             data-fragment-index="10"
+             data-fragment-index="8"
              alt="VM crash or hang"
              data-src="images/explosion.svg" />
     </span>
         <img class="fragment workload bang"
-             data-fragment-index="10"
+             data-fragment-index="8"
              alt="workload crash or hang"
              data-src="images/explosion.svg" />
 </div>
