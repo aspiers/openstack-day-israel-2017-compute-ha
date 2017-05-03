@@ -35,15 +35,15 @@ Before loading up your presentation with bulleted lists, make sure to
 ## `<h2>` works here too
 
 
-<!-- .slide: data-state="section-break-2" id="template-slides-2" data-timing="10s" -->
+<!-- .slide: data-state="section-break-2" id="section-break-2" data-timing="10s" -->
 # Section break (style 2)
 
 
-<!-- .slide: data-state="section-break-3" id="template-slides-3" data-timing="10s" -->
+<!-- .slide: data-state="section-break-3" id="section-break-3" data-timing="10s" -->
 # Section break (style 3)
 
 
-<!-- .slide: data-state="section-break-4" id="template-slides-4" data-timing="10s" -->
+<!-- .slide: data-state="section-break-4" id="section-break-4" data-timing="10s" -->
 # Section break (style 4)
 
 
