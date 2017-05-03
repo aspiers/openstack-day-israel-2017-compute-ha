@@ -6,7 +6,6 @@
        id="talk-end">https://aspiers.github.io/openstack-summit-2017-boston-compute-ha/</a></h3>
 
 
-
 <!-- .slide: data-menu-title="Disclaimers" id="disclaimers" data-state="green-bg" -->
 ### Unpublished Work of SUSE LLC. All Rights Reserved.
 
