@@ -22,7 +22,7 @@ Next, export the diagram from LibreOffice Draw as SVG:
 
 Finally, include it in your Markdown, e.g.
 
-    <img src="images/my-diagram.svg" />
+    <img data-src="images/my-diagram.svg" />
 
 and add CSS styles for size, positioning etc.
 

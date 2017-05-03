@@ -17,7 +17,7 @@
 
 
 <!-- .slide: data-menu-title="SUSE logo" id="SUSE-logo" data-state="green-bg" -->
-<img src="images/SUSE/SUSE-logo-white.png"
+<img data-src="images/SUSE/SUSE-logo-white.png"
      alt="SUSE&reg; logo"
      style="width: 25%; height: 25%; margin-top: 20%;"
      class="full-slide" />
@@ -97,7 +97,7 @@ owners.
 
 <!-- .slide: data-menu-title="License" id="license" data-state="blank-slide" -->
 <div class="full-slide vcenter">
-    <img src="images/by-sa.svg"
+    <img data-src="images/by-sa.svg"
          alt="Creative Commons BY-SA license" />
 </div>
 

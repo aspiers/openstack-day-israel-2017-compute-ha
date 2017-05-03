@@ -152,8 +152,8 @@ use the SUSE presentation template.
 
 <div class="slide-section">
     <h3> Primary Icon Color </h3>
-    <img src="images/SUSE/bars.png" style="width: 150px;" />
-    <img src="images/SUSE/disk.png" style="width:  80px;" />
+    <img data-src="images/SUSE/bars.png" style="width: 150px;" />
+    <img data-src="images/SUSE/disk.png" style="width:  80px;" />
     <div class="icons-typeface">
         <p>
             <b>Icons:</b> Icon libraries are available for download in
@@ -168,25 +168,25 @@ use the SUSE presentation template.
 </div>
 <div class="slide-section">
     <h3> Bubble </h3>
-    <img src="images/SUSE/folder.png" style="width:  100px;" />
-    <img src="images/SUSE/computer.png" style="width:  100px;" />
-    <img src="images/SUSE/right-arrow.png" style="width:  100px;" />
-    <img src="images/SUSE/squeeze-arrows.png" style="width:  100px;" />
-    <img src="images/SUSE/USB.png" style="width:  100px;" />
-    <img src="images/SUSE/bug.png" style="width:  100px;" />
-    <img src="images/SUSE/cylinder.png" style="width:  100px;" />
-    <img src="images/SUSE/brain.png" style="width:  100px;" />
+    <img data-src="images/SUSE/folder.png" style="width:  100px;" />
+    <img data-src="images/SUSE/computer.png" style="width:  100px;" />
+    <img data-src="images/SUSE/right-arrow.png" style="width:  100px;" />
+    <img data-src="images/SUSE/squeeze-arrows.png" style="width:  100px;" />
+    <img data-src="images/SUSE/USB.png" style="width:  100px;" />
+    <img data-src="images/SUSE/bug.png" style="width:  100px;" />
+    <img data-src="images/SUSE/cylinder.png" style="width:  100px;" />
+    <img data-src="images/SUSE/brain.png" style="width:  100px;" />
 </div>
 <div class="slide-section">
     <h3> 3D </h3>
-    <img src="images/SUSE/desktop-computer.png" style="width:  80px;" />
-    <img src="images/SUSE/pie.png" style="width:  80px;" />
-    <img src="images/SUSE/meters.png" style="width:  80px;" />
-    <img src="images/SUSE/office.png" style="width:  80px;" />
-    <img src="images/SUSE/printer.png" style="width:  80px;" />
-    <img src="images/SUSE/box.png" style="width:  80px;" />
-    <img src="images/SUSE/app-window.png" style="width:  80px;" />
-    <img src="images/SUSE/darts.png" style="width:  80px;" />
+    <img data-src="images/SUSE/desktop-computer.png" style="width:  80px;" />
+    <img data-src="images/SUSE/pie.png" style="width:  80px;" />
+    <img data-src="images/SUSE/meters.png" style="width:  80px;" />
+    <img data-src="images/SUSE/office.png" style="width:  80px;" />
+    <img data-src="images/SUSE/printer.png" style="width:  80px;" />
+    <img data-src="images/SUSE/box.png" style="width:  80px;" />
+    <img data-src="images/SUSE/app-window.png" style="width:  80px;" />
+    <img data-src="images/SUSE/darts.png" style="width:  80px;" />
 </div>
 
 
