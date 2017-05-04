@@ -95,10 +95,8 @@ owners.
 </div>
 
 
-<!-- .slide: data-menu-title="License" id="license" data-state="blank-slide" -->
-<div class="full-slide vcenter">
-    <img data-src="images/by-sa.svg"
-         alt="Creative Commons BY-SA license" />
-</div>
+<!-- .slide: data-menu-title="License" class="full-screen" id="license" data-state="blank-slide" -->
+<img data-src="images/by-sa.svg"
+     alt="Creative Commons BY-SA license" />
 
 Note: Add conclusion notes here.
