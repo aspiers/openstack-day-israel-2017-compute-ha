@@ -36,8 +36,6 @@ time to reveal a navigation menu):
     *   Editorial Guidelines
     *   Slide Trademarking Guidelines
 
-<br />
-
 *   Presentation Template
 
 
