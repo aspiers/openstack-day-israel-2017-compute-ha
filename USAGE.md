@@ -1,16 +1,32 @@
-# How to use this presentation template
+# How to use this presentation
 
-[Fork this repo](https://github.com/aspiers/presentation-template/fork) and
-drop Markdown files into [`markdown/`](markdown) and images
-into [`images/`](images). Then, fix up [`index.html`](index.html) to
-include your Markdown-authored sections.
+## Layout of files and directories
 
-This repo has two branches, one named `master` and one
-`gh-pages`. Make sure you do your regular work in `master`, then run
-[`./bin/update-gh-pages.sh`](bin/update-gh-pages.sh).  Alternatively
-merge into `gh-pages` and push both branches. Your presentation will
-then be rendered to [GitHub Pages](https://pages.github.com/) at a URL
-of the form:
+The main content of this presentation is defined by Markdown files
+under the [`markdown/`](markdown) directory.  Each of these files
+effectively corresponds to a section as shown by
+the [`reveal.js-menu`](https://github.com/denehyg/reveal.js-menu)
+which appears when you are viewing the presentation and press `m`.
+The order in which the Markdown files are assembled into the final
+presentation is defined in [`index.html`](index.html).
+
+Images live in the [`images/`](images) directory.
+
+## Hosting via GitHub Pages
+
+The easiest way to publish this presentation is via GitHub Pages.
+[Fork this repo](https://help.github.com/articles/fork-a-repo/) and
+make any required changes.
+
+When using GitHub Pages, in addition to the branch on which you do
+your regular work (typically `master`), there also needs to be a
+`gh-pages` which tells GitHub what to render via its web servers.
+Once the content in your regular branch is ready to be published,
+run [`./bin/update-gh-pages.sh`](bin/update-gh-pages.sh) to update the
+`gh-pages` branch and push it to GitHub.  Alternatively merge any
+updates from your regular branch into `gh-pages`, and push both
+branches.  Your presentation will then be rendered
+to [GitHub Pages](https://pages.github.com/) at a URL of the form:
 
 -   http://*username*.github.io/*presentation-repo-name*
 
