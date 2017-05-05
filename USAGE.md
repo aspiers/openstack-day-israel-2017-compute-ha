@@ -40,7 +40,7 @@ in [`css/reveal-override.scss`](css/reveal-override.scss)
 using [Sass](http://sass-lang.com/); if you update this, you will need
 to re-compile into `css/reveal-override.css` via:
 
-    $ sass css
+    $ sass --update css
 
 If you are doing continual development on the file, then run this in
 the background to automatically re-compile every time the `.scss` file
