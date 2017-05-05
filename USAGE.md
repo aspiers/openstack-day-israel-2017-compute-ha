@@ -12,7 +12,7 @@ merge into `gh-pages` and push both branches. Your presentation will
 then be rendered to [GitHub Pages](https://pages.github.com/) at a URL
 of the form:
 
-- http://*username*.github.io/*presentation-repo-name*
+-   http://*username*.github.io/*presentation-repo-name*
 
 You can share the URL immediately, and GitHub will host it for you,
 indefinitely, for free.
@@ -35,19 +35,17 @@ is changed:
 If you are using GitHub Pages, make sure that the latest versions of
 the generated `.css` files are committed and pushed to the remote
 `gh-pages` branch.
+The [`./bin/update-gh-pages.sh`](bin/update-gh-pages.sh) script serves
+as an example of how to automate this.
 
 ## Running things locally
 
-If you want to run your slides locally, rather than on GitHub Pages,
-just drop them into the `DocumentRoot` of a web server, like Apache or
-[`lighttpd`](https://www.lighttpd.net/).
+Whilst editing slides it is strongly recommended to render your slides
+locally, rather than on GitHub Pages, so that you can see your edits
+take immediate effect without having to `git push` each change.  To
+do this, a few simple steps are required.
 
-For `lighttpd`, you may also want to set the following options:
-
-    dir-listing.encoding = "utf-8"
-    server.dir-listing   = "enable"
-    server.modules      += ( "mod_userdir" )
-    userdir.path         = "public_html"
+### Retrieve the dependencies
 
 Use the provided `.gitmodules` file to automatically clone local
 copies of `reveal.js`,
@@ -57,13 +55,44 @@ copies of `reveal.js`,
     git submodule init
     git submodule update
 
-Generate the reveal-override.css file:
+### Generate the stylesheet
 
-    sass --update css/reveal-override.scss
+Generate the CSS with Sass as described above.  The `--watch` option
+is strongly recommended for continuous development.
 
-Then, create a symlink to your Git checkout in `~/public_html`, such as:
+### Serve the files via a web server
+
+The files must be served by a local web server.
+
+#### Python webserver
+
+If you have Python installed, the easiest way is probably to run this
+one-line command from the repository:
+
+    python -m SimpleHTTPServer 8000
+
+#### Apache
+
+Alternatively if you already have Apache installed, you can just move
+or symlink the repository into Apache's `DocumentRoot` or some other
+directory which Apache is configured to serve.  For example, Apache
+is often configured to serve all files under `~/public_html`, so you
+could do:
 
     ln -s ~/git/my-presentation ~/public_html/
 
-... and access your presentation from
-http://localhost/~yourusername/my-presentation/
+and then access your presentation from
+
+-   http://localhost/~yourusername/my-presentation/
+
+#### lighttpd
+
+If you are using [`lighttpd`](https://www.lighttpd.net/), you may also
+want to set the following options:
+
+    dir-listing.encoding = "utf-8"
+    server.dir-listing   = "enable"
+    server.modules      += ( "mod_userdir" )
+    userdir.path         = "public_html"
+
+to achieve a similar result using `~/public_html`.
