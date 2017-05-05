@@ -19,9 +19,10 @@ indefinitely, for free.
 
 ## Theming
 
-The theme is defined in `css/reveal-override.scss` using
-[Sass](http://sass-lang.com/); if you update this, you will need to
-re-compile into `css/reveal-override.css` via:
+The theme is defined
+in [`css/reveal-override.scss`](css/reveal-override.scss)
+using [Sass](http://sass-lang.com/); if you update this, you will need
+to re-compile into `css/reveal-override.css` via:
 
     $ sass css
 
