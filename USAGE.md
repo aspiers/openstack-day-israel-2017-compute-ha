@@ -43,34 +43,26 @@ just drop them into the `DocumentRoot` of a web server, like Apache or
 
 For `lighttpd`, you may also want to set the following options:
 
-```
-dir-listing.encoding = "utf-8"
-server.dir-listing   = "enable"
-server.modules      += ( "mod_userdir" )
-userdir.path         = "public_html"
-```
+    dir-listing.encoding = "utf-8"
+    server.dir-listing   = "enable"
+    server.modules      += ( "mod_userdir" )
+    userdir.path         = "public_html"
 
 Use the provided `.gitmodules` file to automatically clone local
 copies of `reveal.js`,
 [`qrcodejs`](https://davidshimjs.github.io/qrcodejs/), and
 [`reveal.js-menu`](https://github.com/denehyg/reveal.js-menu):
 
-```bash
-git submodule init
-git submodule update
-```
+    git submodule init
+    git submodule update
 
 Generate the reveal-override.css file:
 
-```bash
-sass --update css/reveal-override.scss
-```
+    sass --update css/reveal-override.scss
 
 Then, create a symlink to your Git checkout in `~/public_html`, such as:
 
-```bash
-ln -s ~/git/my-presentation ~/public_html/
-```
+    ln -s ~/git/my-presentation ~/public_html/
 
 ... and access your presentation from
 http://localhost/~yourusername/my-presentation/
