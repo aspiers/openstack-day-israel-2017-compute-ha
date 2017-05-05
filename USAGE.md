@@ -1,9 +1,9 @@
 # How to use this presentation template
 
-Just [fork this repo](https://github.com/aspiers/presentation-template/fork)
-and drop Markdown files into `markdown` and images into
-`images`. Then, fix up `index.html` to include your Markdown-authored
-sections.
+[Fork this repo](https://github.com/aspiers/presentation-template/fork) and
+drop Markdown files into [`markdown/`](markdown) and images
+into [`images/`](images). Then, fix up [`index.html`](index.html) to
+include your Markdown-authored sections.
 
 This repo has two branches, one named `master` and one
 `gh-pages`. Make sure you do your regular work in `master`, then run
