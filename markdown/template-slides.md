@@ -35,15 +35,15 @@ Before loading up your presentation with bulleted lists, make sure to
 ## `<h2>` works here too
 
 
-<!-- .slide: data-state="section-break-2" id="template-slides-2" data-timing="10s" -->
+<!-- .slide: data-state="section-break-2" id="section-break-2" data-timing="10s" -->
 # Section break (style 2)
 
 
-<!-- .slide: data-state="section-break-3" id="template-slides-3" data-timing="10s" -->
+<!-- .slide: data-state="section-break-3" id="section-break-3" data-timing="10s" -->
 # Section break (style 3)
 
 
-<!-- .slide: data-state="section-break-4" id="template-slides-4" data-timing="10s" -->
+<!-- .slide: data-state="section-break-4" id="section-break-4" data-timing="10s" -->
 # Section break (style 4)
 
 
@@ -72,3 +72,25 @@ def ping! node
   result, :foo
 end
 ```
+
+
+<!-- .slide: data-state="section-break" id="full-screen-images" data-timing="10s" -->
+# Full screen images
+
+
+<!-- .slide: data-state="blank-slide" class="full-screen" id="full-screen-image-1" data-timing="10s" -->
+<a title="By Fraser Hart (http://www.hermitagebay.com) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ABeach_pano.jpg">
+    <img alt="Beach pano" src="images/beach-pano-16x9.jpg"/>
+</a>
+
+
+<!-- .slide: data-state="blank-slide" class="full-screen" id="full-screen-image-2" data-timing="10s" -->
+<a title="By Fraser Hart (http://www.hermitagebay.com) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ABeach_pano.jpg">
+    <img alt="Beach pano" src="images/beach-pano-tall.jpg"/>
+</a>
+
+
+<!-- .slide: data-state="blank-slide" class="full-screen" id="full-screen-image-3" data-timing="10s" -->
+<a title="By Fraser Hart (http://www.hermitagebay.com) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ABeach_pano.jpg">
+    <img alt="Beach pano" src="images/beach-pano-wide.jpg"/>
+</a>

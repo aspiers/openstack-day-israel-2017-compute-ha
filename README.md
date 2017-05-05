@@ -16,6 +16,10 @@ technology.
 [view the slides online](http://aspiers.github.io/openstack-summit-2016-austin-compute-ha/)
 here**; press `Space` to advance 1 slide at a time, or `?` for help.
 
+## How to use
+
+See [the USAGE.md file](USAGE.md).
+
 ## Feedback
 
 Send any feedback via email to `aspiers` `at` `suse.com`.  You can
