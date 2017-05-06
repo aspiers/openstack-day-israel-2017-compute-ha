@@ -63,8 +63,10 @@ advantages over LibreOffice Impress:
     -   [`chalkboard`](https://github.com/rajgoel/reveal.js-plugins/tree/master/chalkboard) -
         turn your slides into a chalkboard for real-time drawing
 
-    -   [`asciinema`](https://github.com/asciinema/asciinema.org/) - play
-        recorded demos from within a slide
+    -   play recorded screencast demos from within a slide, as pure HTML
+        via [`TermRecord`](https://github.com/theonewolf/TermRecord),
+        or as a video via
+        [`asciinema`](https://github.com/asciinema/asciinema.org/)
 
     -   [`shellinabox`](https://github.com/shellinabox/shellinabox) - do
         live demos from within a shell embedded in a slide
