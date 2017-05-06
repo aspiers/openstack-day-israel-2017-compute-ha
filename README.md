@@ -75,7 +75,8 @@ advantages over LibreOffice Impress:
     [`highlight.js`](https://highlightjs.org/), themed in SUSE
     colours.
 
--   Navigation menu to easily jump around between slides
+-   [Navigation menu](https://denehyg.github.io/reveal.js-menu/#/titles)
+    to easily jump around between slides (just press the `m` key)
 
 -   [Zoom to 1,000 feet above your presentation](https://github.com/hakimel/reveal.js/#overview-mode)
     to see the whole thing laid out in two dimensions (one column per
