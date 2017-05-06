@@ -18,7 +18,7 @@
     <div class="presenter presenter-2">
         <h3 class="name">Sampath Priyankara</h3>
         <h3 class="job-title">Software Engineer, NTT</h3>
-        <h3 class="email"><a href="mailto:FIXME">FIXME</a></h3>
+        <h3 class="email"><a href="mailto:sampath.priyankara@lab.ntt.co.jp">sampath.priyankara@lab.ntt.co.jp</a></h3>
     </div>
 </div>
 
