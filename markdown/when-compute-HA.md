@@ -1,5 +1,5 @@
 <!-- .slide: data-state="section-break" id="when" data-menu-title="Why compute HA?" data-timing="10" -->
-# Does OpenStack need HA 
+# Does OpenStack need HA
 # on the compute plane?
 
 Note:
@@ -10,17 +10,10 @@ solving, but does it *always* need solving?
 <!-- .slide: data-state="normal" id="pets-vs-cattle" class="pets-vs-cattle" data-timing="50" -->
 ## Pets vs. cattle
 
-<div class="row pets">
-    <div class="col-md-5">
-        <img data-src="images/begging-cat-c2.jpg" alt="cute pleading cat"
-             class="pull-right" />
-    </div>
-</div>
-
-<div class="row cattle">
-    <div class="col-md-5">
-        <img data-src="images/cattle-c.jpg" alt="cattle" class="pull-right" />
-    </div>
+<div style="display: flex; justify-content: center; height: 87%">
+  <img data-src="images/kitten.jpg" alt="cute kitten" class="fragment" />
+  <img data-src="images/brown-cow.jpg" alt="cattle" class="fragment"
+       style="margin-left: 5%;" />
 </div>
 
 Note:
@@ -32,25 +25,85 @@ Note:
 - thanks to CERN for this slide, and Bill Baker for the original terminology
 
 
-<!-- .slide: data-state="normal" id="white-elephant" data-timing="40" data-menu-title="White elephant" -->
-## Addressing the white elephant in the room
+<!-- .slide: data-state="normal" id="cattle" data-timing="60" -->
+## Cattle in the cloud
 
-<div>
-    <img alt="The white elephant in the room"
-         class="fragment"
-         style="height: 90%; margin: -40px 0 0 50;"
-         data-src="images/white-elephant.svg" />
-</div>
+<img data-src="images/cloud.jpg" alt="cloud outline"
+     style="width: 100%; height: 87%; margin-top: -2%" />
 
-Note:
+<!-- compute nodes are 16% apart -->
+<img data-src="images/rounded-rect.svg" class="compute-node col-1 fragment"
+     data-fragment-index="1"
+     alt="Compute node" />
+<img data-src="images/rounded-rect.svg" class="compute-node col-2 fragment"
+     data-fragment-index="1"
+     alt="Compute node" />
+<img data-src="images/rounded-rect.svg" class="compute-node col-3 fragment"
+     data-fragment-index="1"
+     alt="Compute node" />
+<img data-src="images/rounded-rect.svg" class="compute-node col-4 fragment"
+     data-fragment-index="1"
+     alt="Compute node" />
 
-Compute node HA is a controversial feature, because
-some people think it's an anti-pattern which does not belong,
-in clouds, whereas other people feel a strong need for it.
+<!-- row 1 cattle -->
+<span class="fade-out fragment" data-fragment-index="16">
+<img data-src="images/brown-cow.jpg" class="cow row-1 col-1 fragment" alt="cattle"
+     data-fragment-index="2" />
+</span>
+<img data-src="images/brown-cow.jpg" class="cow row-1 col-2 fragment" alt="cattle"
+     data-fragment-index="3" />
+<img data-src="images/brown-cow.jpg" class="cow row-1 col-3 fragment" alt="cattle"
+     data-fragment-index="4" />
+
+<!-- explode first cow in row 1 -->
+<span class="fade-out fragment" data-fragment-index="16">
+<img data-src="images/explosion.svg" class="cow-bang row-1 col-1 fragment"
+     data-fragment-index="5" alt="cow failure" />
+</span>
+<img data-src="images/brown-cow.jpg" class="cow row-1 col-4 fragment" alt="cattle"
+     data-fragment-index="6" />
+
+<!-- row 2 -->
+<img data-src="images/brown-cow.jpg" class="cow row-2 col-1 fragment" alt="cattle"
+     data-fragment-index="7" />
+<img data-src="images/brown-cow.jpg" class="cow row-2 col-2 fragment" alt="cattle"
+     data-fragment-index="8" />
+<span class="fade-out fragment" data-fragment-index="16">
+<img data-src="images/brown-cow.jpg" class="cow row-2 col-3 fragment" alt="cattle"
+     data-fragment-index="9" />
+</span>
+
+<!-- explode third cow in row 2 -->
+<span class="fade-out fragment" data-fragment-index="16">
+<img data-src="images/explosion.svg" class="cow-bang row-2 col-3 fragment"
+     data-fragment-index="10" alt="cow failure" />
+</span>
+<img data-src="images/brown-cow.jpg" class="cow row-2 col-4 fragment" alt="cattle"
+     data-fragment-index="11" />
+
+<!-- row 3 -->
+<img data-src="images/brown-cow.jpg" class="cow row-3 col-1 fragment" alt="cattle"
+     data-fragment-index="12" />
+<span class="fade-out fragment" data-fragment-index="16">
+<img data-src="images/brown-cow.jpg" class="cow row-3 col-2 fragment" alt="cattle"
+     data-fragment-index="13" />
+</span>
+
+<!-- explode second cow in row 3 -->
+<span class="fade-out fragment" data-fragment-index="16">
+<img data-src="images/explosion.svg" class="cow-bang row-3 col-2 fragment"
+     data-fragment-index="14" alt="cow failure" />
+</span>
+<img data-src="images/brown-cow.jpg" class="cow row-3 col-3 fragment" alt="cattle"
+     data-fragment-index="15" />
+
+
+<!-- .slide: data-state="normal" id="pets" data-timing="60" -->
+## Pets in the cloud?
 
 
 <!-- .slide: data-state="normal" id="justification" data-menu-title="Justification" data-timing="60" -->
-## Does OpenStack really need HA on the compute plane?
+## Does OpenStack really need compute plane HA?
 
 <span class="fragment" data-fragment-index="1">
     <img class="fragment fade-out" data-fragment-index="2"

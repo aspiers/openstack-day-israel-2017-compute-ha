@@ -14,7 +14,9 @@
 
     img {
         display: block;
-        width: 500px;
+        width: 48%;
+        object-fit: contain;
+        margin-top: -5%;
     }
 
     .pets {
@@ -31,9 +33,57 @@
     }
 }
 
-#pets-vs-cattle-2 {
-    ul {
-        font-size: 1.1em;
+#cattle {
+    img {
+        position: absolute;
+    }
+
+    $top-row: 36%;
+    $left-col: 17%;
+
+    $col-delta: 16%;
+    $row-delta: 15%;
+
+    img.compute-node {
+        width: 15%;
+        top: $top-row - 3%;
+        margin-left: -2%;
+    }
+
+    img.col-1 {
+        left: $left-col;
+    }
+
+    img.col-2 {
+        left: $left-col + $col-delta;
+    }
+
+    img.col-3 {
+        left: $left-col + 2*$col-delta;
+    }
+
+    img.col-4 {
+        left: $left-col + 3*$col-delta;
+    }
+
+    img.cow {
+        width: 11%;
+    }
+
+    img.cow-bang {
+        width: 11%;
+        margin-left: -1%;
+        margin-top: -1%;
+    }
+
+    img.row-1 {
+        top: $top-row;
+    }
+    img.row-2 {
+        top: $top-row + $row-delta;
+    }
+    img.row-3 {
+        top: $top-row + 2*$row-delta;
     }
 }
 
