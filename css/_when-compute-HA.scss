@@ -33,56 +33,78 @@
     }
 }
 
-#cattle {
-    img {
+#cattle, #pets {
+    img.cloud {
+        width: 100%;
+        height: 87%;
+        margin-top: -2%;
+    }
+
+    img, svg {
         position: absolute;
     }
 
     $top-row: 36%;
-    $left-col: 17%;
+    $left-col: 19%;
 
     $col-delta: 16%;
     $row-delta: 15%;
 
-    img.compute-node {
+    .compute-node {
         width: 15%;
         top: $top-row - 3%;
         margin-left: -2%;
     }
 
-    img.col-1 {
+    .reboot-compute-node {
+        width: 15%;
+        top: $top-row + 10%;
+        margin-left: -2%;
+    }
+
+    .unreachable {
+        opacity: 0.5;
+    }
+
+    .col-1 {
         left: $left-col;
     }
 
-    img.col-2 {
+    .col-2 {
         left: $left-col + $col-delta;
     }
 
-    img.col-3 {
+    .col-3 {
         left: $left-col + 2*$col-delta;
     }
 
-    img.col-4 {
+    .col-4 {
         left: $left-col + 3*$col-delta;
     }
 
-    img.cow {
+    .cow {
         width: 11%;
     }
 
-    img.cow-bang {
+    .kitteh {
+        width: 12%;
+        margin-top: 1.5%;
+        margin-left: -0.5%;
+    }
+
+    .cow-bang {
         width: 11%;
         margin-left: -1%;
         margin-top: -1%;
     }
 
-    img.row-1 {
+    .row-1 {
         top: $top-row;
     }
-    img.row-2 {
+    .row-2 {
         top: $top-row + $row-delta;
     }
-    img.row-3 {
+    .row-3 {
         top: $top-row + 2*$row-delta;
     }
 }

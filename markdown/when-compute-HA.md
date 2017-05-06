@@ -28,24 +28,19 @@ Note:
 <!-- .slide: data-state="normal" id="cattle" data-timing="60" -->
 ## Cattle in the cloud
 
-<img data-src="images/cloud.jpg" alt="cloud outline"
-     style="width: 100%; height: 87%; margin-top: -2%" />
+<img data-src="images/cloud.jpg" class="cloud" alt="cloud outline" />
 
-<!-- compute nodes are 16% apart -->
+<!-- compute nodes -->
 <img data-src="images/rounded-rect.svg" class="compute-node col-1 fragment"
-     data-fragment-index="1"
-     alt="Compute node" />
+     data-fragment-index="1" alt="Compute node" />
 <img data-src="images/rounded-rect.svg" class="compute-node col-2 fragment"
-     data-fragment-index="1"
-     alt="Compute node" />
+     data-fragment-index="1" alt="Compute node" />
 <img data-src="images/rounded-rect.svg" class="compute-node col-3 fragment"
-     data-fragment-index="1"
-     alt="Compute node" />
+     data-fragment-index="1" alt="Compute node" />
 <img data-src="images/rounded-rect.svg" class="compute-node col-4 fragment"
-     data-fragment-index="1"
-     alt="Compute node" />
+     data-fragment-index="1" alt="Compute node" />
 
-<!-- row 1 cattle -->
+<!-- row 1 -->
 <span class="fade-out fragment" data-fragment-index="16">
 <img data-src="images/brown-cow.jpg" class="cow row-1 col-1 fragment" alt="cattle"
      data-fragment-index="2" />
@@ -97,9 +92,70 @@ Note:
 <img data-src="images/brown-cow.jpg" class="cow row-3 col-3 fragment" alt="cattle"
      data-fragment-index="15" />
 
+<!-- compute node failure -->
+<img data-src="images/solid-rect.svg"
+     class="compute-node unreachable col-1 fragment"
+     data-fragment-index="17" alt="Unreachable compute node"/>
+<img data-src="images/reboot.png"
+     class="reboot-compute-node col-1 fragment"
+     data-fragment-index="18" alt="Reboot compute node"/>
+
+Note:
+
+Cattle workloads are naturally resilient to failures, but sometimes
+you still need something to clean up the mess when things go wrong.
+
 
 <!-- .slide: data-state="normal" id="pets" data-timing="60" -->
 ## Pets in the cloud?
+
+<img data-src="images/cloud.jpg" class="cloud" alt="cloud outline" />
+
+<!-- compute nodes -->
+<img data-src="images/rounded-rect.svg" class="compute-node col-1 fragment"
+     data-fragment-index="1" alt="Compute node" />
+<img data-src="images/rounded-rect.svg" class="compute-node col-2 fragment"
+     data-fragment-index="1" alt="Compute node" />
+<img data-src="images/rounded-rect.svg" class="compute-node col-3 fragment"
+     data-fragment-index="1" alt="Compute node" />
+<img data-src="images/rounded-rect.svg" class="compute-node col-4 fragment"
+     data-fragment-index="1" alt="Compute node" />
+
+<img data-src="images/brown-cow.jpg" class="cow row-1 col-1 fragment" alt="cattle"
+     data-fragment-index="2" />
+<img data-src="images/kitten.jpg" class="kitteh row-1 col-2 fragment" alt="kitteh"
+     data-fragment-index="2" />
+<img data-src="images/brown-cow.jpg" class="cow row-1 col-3 fragment" alt="cattle"
+     data-fragment-index="2" />
+<img data-src="images/brown-cow.jpg" class="cow row-1 col-4 fragment" alt="cattle"
+     data-fragment-index="2" />
+
+<img data-src="images/brown-cow.jpg" class="cow row-2 col-1 fragment" alt="cattle"
+     data-fragment-index="2" />
+<img data-src="images/brown-cow.jpg" class="cow row-2 col-2 fragment" alt="cattle"
+     data-fragment-index="2" />
+<img data-src="images/brown-cow.jpg" class="cow row-2 col-3 fragment" alt="cattle"
+     data-fragment-index="2" />
+<img data-src="images/brown-cow.jpg" class="cow row-2 col-4 fragment" alt="cattle"
+     data-fragment-index="2" />
+
+<img data-src="images/kitten.jpg" class="kitteh row-3 col-1 fragment" alt="kitteh"
+     data-fragment-index="2" />
+<img data-src="images/brown-cow.jpg" class="cow row-3 col-2 fragment" alt="cattle"
+     data-fragment-index="2" />
+
+<!-- compute node failure -->
+<img data-src="images/solid-rect.svg"
+     class="compute-node unreachable col-1 fragment"
+     data-fragment-index="3" alt="Unreachable compute node"/>
+<img data-src="images/reboot.png"
+     class="reboot-compute-node col-1 fragment"
+     data-fragment-index="4" alt="Reboot compute node"/>
+
+Note:
+
+You could keep your pets outside the cloud, but then you'd lose all
+the manageability benefits of clouds.
 
 
 <!-- .slide: data-state="normal" id="justification" data-menu-title="Justification" data-timing="60" -->
