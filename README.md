@@ -71,6 +71,9 @@ advantages over LibreOffice Impress:
     -   [`shellinabox`](https://github.com/shellinabox/shellinabox) - do
         live demos from within a shell embedded in a slide
 
+    -   Use any Javascript library to dynamically generate content,
+        e.g. [`git` commit graphs](https://sap-oc.github.io/openstack-boston-presentation/#/github-branches-tags)
+
 -   Automatic code syntax-highlighting via
     [`highlight.js`](https://highlightjs.org/), themed in SUSE
     colours.
