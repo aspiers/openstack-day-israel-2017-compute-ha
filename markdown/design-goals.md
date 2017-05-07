@@ -168,7 +168,7 @@ This could be incorporated into Horizon.
 <img data-src="images/kitten.jpg" class="kitteh row-3 col-1" alt="kitteh" />
 <img data-src="images/CowFace-c.jpg" class="cow row-3 col-2" alt="cattle" />
 
-<!-- compute node failure -->
+<!-- Configure by AZ -->
 <div class="fade-out fragment" data-fragment-index="2">
   <div class="two-compute-nodes fade az1 col-1 fragment"
        data-fragment-index="1" alt="Availability zone 1"></div>
@@ -176,26 +176,28 @@ This could be incorporated into Horizon.
        data-fragment-index="1" alt="Availability zone 2"></div>
 </div>
 
-<div class="fade-out fragment" data-fragment-index="3">
+<!-- Configure by project -->
+<div class="fade-out fragment" data-fragment-index="4">
   <div class="fade project col-2 row-2 fragment"
-       data-fragment-index="2" alt="Project instance"></div>
+       data-fragment-index="3" alt="Project instance"></div>
   <div class="fade project col-3 row-2 fragment"
-       data-fragment-index="2" alt="Project instance"></div>
+       data-fragment-index="3" alt="Project instance"></div>
   <div class="fade project col-2 row-3 fragment"
-       data-fragment-index="2" alt="Project instance"></div>
+       data-fragment-index="3" alt="Project instance"></div>
   <div class="fade project col-4 row-1 fragment"
-       data-fragment-index="2" alt="Project instance"></div>
+       data-fragment-index="3" alt="Project instance"></div>
 </div>
 
-<div class="fade-out fragment" data-fragment-index="4">
+<!-- Configure by flavor -->
+<div class="fade-out fragment" data-fragment-index="6">
   <div class="fade flavor col-2 row-1 fragment"
-       data-fragment-index="3" alt="Flavor instance"></div>
+       data-fragment-index="5" alt="Flavor instance"></div>
   <div class="fade flavor col-1 row-3 fragment"
-       data-fragment-index="3" alt="Flavor instance"></div>
+       data-fragment-index="5" alt="Flavor instance"></div>
 </div>
 
 <div class="fade instance col-2 row-1 fragment"
-     data-fragment-index="4" alt="Flavor instance"></div>
+     data-fragment-index="7" alt="Flavor instance"></div>
 
 Note:
 
