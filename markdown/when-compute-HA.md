@@ -7,7 +7,7 @@ The previous slide suggests there is a problem which needs
 solving, but does it *always* need solving?
 
 
-<!-- .slide: data-state="normal" id="pets-vs-cattle" class="pets-vs-cattle" data-timing="50" -->
+<!-- .slide: data-state="normal" id="pets-vs-cattle" class="pets-vs-cattle" data-timing="30" -->
 ## Pets vs. cattle
 
 <div style="display: flex; justify-content: center; height: 87%">
@@ -17,12 +17,12 @@ solving, but does it *always* need solving?
 </div>
 
 Note:
-- Pets are typically given unique names, whereas cattle aren't.
-- This reflects that pets take a lot of work to create and look after,
-  whereas cattle don't.
-- Similarly, when something goes wrong with a pet, you need to
-  invest a lot of effort to fix it, whereas with cattle you just get another one.
-- thanks to CERN for this slide, and Bill Baker for the original terminology
+
+- Pets are each unique, stateful, and take a lot of work to create and
+  look after.
+- Cattle are all the same, and stateless, so when something goes wrong
+  with one you just get another one to replace it.
+- Thanks to Bill Baker for the original terminology.
 
 
 <!-- .slide: data-state="normal" id="cattle" data-timing="60" -->
