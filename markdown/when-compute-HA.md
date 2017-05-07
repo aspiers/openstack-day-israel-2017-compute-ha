@@ -26,7 +26,7 @@ Note:
 
 
 <!-- .slide: data-state="normal" id="cattle" data-timing="60" -->
-## Cattle in the cloud
+## Cattle: ideal for the cloud
 
 <img data-src="images/cloud.jpg" class="cloud" alt="cloud outline" />
 
