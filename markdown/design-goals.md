@@ -210,8 +210,6 @@ Which failures to handle?
 *   All instances of a flavor?
 *   Individually selected instances?
 
-**TODO**: replace animated diagram
-
 
 <!-- .slide: data-state="normal" id="configurability-2" data-menu-title="Configurability (2)" data-timing="60" -->
 ## Design goal: Configurability (2)
