@@ -61,10 +61,10 @@ Note:
 <!-- row 2 -->
 <img data-src="images/brown-cow.jpg" class="cow row-2 col-1 fragment" alt="cattle"
      data-fragment-index="7" />
-<img data-src="images/brown-cow.jpg" class="cow row-2 col-2 fragment" alt="cattle"
+<img data-src="images/CowFace-c.jpg" class="cow row-2 col-2 fragment" alt="cattle"
      data-fragment-index="8" />
 <span class="fade-out fragment" data-fragment-index="16">
-<img data-src="images/brown-cow.jpg" class="cow row-2 col-3 fragment" alt="cattle"
+<img data-src="images/CowFace-c.jpg" class="cow row-2 col-3 fragment" alt="cattle"
      data-fragment-index="9" />
 </span>
 
@@ -73,11 +73,11 @@ Note:
 <img data-src="images/explosion.svg" class="cow-bang row-2 col-3 fragment"
      data-fragment-index="10" alt="cow failure" />
 </span>
-<img data-src="images/brown-cow.jpg" class="cow row-2 col-4 fragment" alt="cattle"
+<img data-src="images/CowFace-c.jpg" class="cow row-2 col-4 fragment" alt="cattle"
      data-fragment-index="11" />
 
 <!-- row 3 -->
-<img data-src="images/brown-cow.jpg" class="cow row-3 col-1 fragment" alt="cattle"
+<img data-src="images/CowFace-c.jpg" class="cow row-3 col-1 fragment" alt="cattle"
      data-fragment-index="12" />
 <span class="fade-out fragment" data-fragment-index="16">
 <img data-src="images/brown-cow.jpg" class="cow row-3 col-2 fragment" alt="cattle"
@@ -132,11 +132,11 @@ you still need something to clean up the mess when things go wrong.
 
 <img data-src="images/brown-cow.jpg" class="cow row-2 col-1 fragment" alt="cattle"
      data-fragment-index="2" />
-<img data-src="images/brown-cow.jpg" class="cow row-2 col-2 fragment" alt="cattle"
+<img data-src="images/CowFace-c.jpg" class="cow row-2 col-2 fragment" alt="cattle"
      data-fragment-index="2" />
-<img data-src="images/brown-cow.jpg" class="cow row-2 col-3 fragment" alt="cattle"
+<img data-src="images/CowFace-c.jpg" class="cow row-2 col-3 fragment" alt="cattle"
      data-fragment-index="2" />
-<img data-src="images/brown-cow.jpg" class="cow row-2 col-4 fragment" alt="cattle"
+<img data-src="images/CowFace-c.jpg" class="cow row-2 col-4 fragment" alt="cattle"
      data-fragment-index="2" />
 
 <img data-src="images/kitten.jpg" class="kitteh row-3 col-1 fragment" alt="kitteh"

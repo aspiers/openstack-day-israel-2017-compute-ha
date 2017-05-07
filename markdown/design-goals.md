@@ -158,15 +158,15 @@ This could be incorporated into Horizon.
 <img data-src="images/brown-cow.jpg" class="cow row-1 col-1" alt="cattle" />
 <img data-src="images/kitten.jpg" class="kitteh row-1 col-2" alt="kitteh" />
 <img data-src="images/brown-cow.jpg" class="cow row-1 col-3" alt="cattle" />
-<img data-src="images/brown-cow.jpg" class="cow row-1 col-4" alt="cattle" />
+<img data-src="images/CowFace-c.jpg" class="cow row-1 col-4" alt="cattle" />
 
 <img data-src="images/brown-cow.jpg" class="cow row-2 col-1" alt="cattle" />
-<img data-src="images/brown-cow.jpg" class="cow row-2 col-2" alt="cattle" />
-<img data-src="images/brown-cow.jpg" class="cow row-2 col-3" alt="cattle" />
+<img data-src="images/CowFace-c.jpg" class="cow row-2 col-2" alt="cattle" />
+<img data-src="images/CowFace-c.jpg" class="cow row-2 col-3" alt="cattle" />
 <img data-src="images/brown-cow.jpg" class="cow row-2 col-4" alt="cattle" />
 
 <img data-src="images/kitten.jpg" class="kitteh row-3 col-1" alt="kitteh" />
-<img data-src="images/brown-cow.jpg" class="cow row-3 col-2" alt="cattle" />
+<img data-src="images/CowFace-c.jpg" class="cow row-3 col-2" alt="cattle" />
 
 <!-- compute node failure -->
 <div class="fade-out fragment" data-fragment-index="2">
@@ -177,9 +177,9 @@ This could be incorporated into Horizon.
 </div>
 
 <div class="fade-out fragment" data-fragment-index="3">
-  <div class="fade project col-1 row-1 fragment"
-       data-fragment-index="2" alt="Project instance"></div>
   <div class="fade project col-2 row-2 fragment"
+       data-fragment-index="2" alt="Project instance"></div>
+  <div class="fade project col-3 row-2 fragment"
        data-fragment-index="2" alt="Project instance"></div>
   <div class="fade project col-2 row-3 fragment"
        data-fragment-index="2" alt="Project instance"></div>
