@@ -128,12 +128,16 @@ We assume that Pacemaker is reliable, otherwise we're sunk!
 <!-- .slide: data-state="normal" id="operability" data-menu-title="Operability" data-timing="60" -->
 ## Design goal: Operability
 
-FIXME: API image here?
+<figure>
+    <img alt="API" data-src="images/API.jpg" style="width: 90%" />
+</figure>
+
+Note:
 
 Cloud operators need an API to access details of ongoing and
 historical alerts and corresponding actions.
 
-Eventually could be incorporated into Horizon.
+This could be incorporated into Horizon.
 
 
 <!-- .slide: data-state="normal" id="configurability" data-menu-title="Configurability" data-timing="60" -->
