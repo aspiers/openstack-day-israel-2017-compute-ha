@@ -102,11 +102,12 @@ Note:
 
 Note:
 
-- Cattle workloads are naturally resilient
-- Application layer handles individual failures by deploying
+- Stateless cattle workloads *might* be naturally resilient
+- Application layer ideally handles individual failures by deploying
   more instances
 - Can also use OpenStack API to clean up failed instances
-- But what if a whole compute host fails?
+- But might be dumb cattle => need control plane to resurrect
+- What if a whole compute host fails?
 - Still need to handle failures in the cloud infrastructure layer,
   e.g. by rebooting compute host.
 
@@ -159,8 +160,11 @@ Note:
 
 Note:
 
-You could keep your pets outside the cloud, but then you'd lose all
-the manageability benefits of clouds.
+- You could keep your pets outside the cloud, but then you'd lose all
+  the manageability benefits of clouds.
+- When a compute node becomes unresponsive, any stateful pets running
+  there need to be carefully resurrected elsewhere.
+- Fencing required to avoid data corruption.
 
 
 <!-- .slide: data-state="normal" id="justification" data-menu-title="Justification" data-timing="60" -->
