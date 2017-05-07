@@ -102,8 +102,13 @@ Note:
 
 Note:
 
-Cattle workloads are naturally resilient to failures, but sometimes
-you still need something to clean up the mess when things go wrong.
+- Cattle workloads are naturally resilient
+- Application layer handles individual failures by deploying
+  more instances
+- Can also use OpenStack API to clean up failed instances
+- But what if a whole compute host fails?
+- Still need to handle failures in the cloud infrastructure layer,
+  e.g. by rebooting compute host.
 
 
 <!-- .slide: data-state="normal" id="pets" data-timing="60" -->
