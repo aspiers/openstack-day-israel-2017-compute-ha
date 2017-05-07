@@ -219,7 +219,7 @@ with different workflows.
 
 *   Optional use of host reservation to ensure minimum level of redundancy
 *   Retry thresholds on recovery of processes and VM instances
-*   Configurable workflows?
+*   Configurable workflows
 
 Note: There is no one-size-fits-all solution to compute HA.
 
