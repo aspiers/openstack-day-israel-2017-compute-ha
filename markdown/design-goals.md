@@ -129,7 +129,7 @@ We assume that Pacemaker is reliable, otherwise we're sunk!
 ## Design goal: Operability
 
 <figure>
-    <img alt="API" data-src="images/API.jpg" style="width: 90%" />
+    <img alt="API" data-src="images/API.jpg" style="width: 100%" />
 </figure>
 
 Note:
@@ -142,6 +142,62 @@ This could be incorporated into Horizon.
 
 <!-- .slide: data-state="normal" id="configurability" data-menu-title="Configurability" data-timing="60" -->
 ## Design goal: Configurability
+
+<img data-src="images/cloud.jpg" class="cloud" alt="cloud outline" />
+
+<!-- compute nodes -->
+<img data-src="images/rounded-rect.svg" class="compute-node col-1"
+     alt="Compute node" />
+<img data-src="images/rounded-rect.svg" class="compute-node col-2"
+     alt="Compute node" />
+<img data-src="images/rounded-rect.svg" class="compute-node col-3"
+     alt="Compute node" />
+<img data-src="images/rounded-rect.svg" class="compute-node col-4"
+     alt="Compute node" />
+
+<img data-src="images/brown-cow.jpg" class="cow row-1 col-1" alt="cattle" />
+<img data-src="images/kitten.jpg" class="kitteh row-1 col-2" alt="kitteh" />
+<img data-src="images/brown-cow.jpg" class="cow row-1 col-3" alt="cattle" />
+<img data-src="images/brown-cow.jpg" class="cow row-1 col-4" alt="cattle" />
+
+<img data-src="images/brown-cow.jpg" class="cow row-2 col-1" alt="cattle" />
+<img data-src="images/brown-cow.jpg" class="cow row-2 col-2" alt="cattle" />
+<img data-src="images/brown-cow.jpg" class="cow row-2 col-3" alt="cattle" />
+<img data-src="images/brown-cow.jpg" class="cow row-2 col-4" alt="cattle" />
+
+<img data-src="images/kitten.jpg" class="kitteh row-3 col-1" alt="kitteh" />
+<img data-src="images/brown-cow.jpg" class="cow row-3 col-2" alt="cattle" />
+
+<!-- compute node failure -->
+<div class="fade-out fragment" data-fragment-index="2">
+  <div class="two-compute-nodes fade az1 col-1 fragment"
+       data-fragment-index="1" alt="Availability zone 1"></div>
+  <div class="two-compute-nodes fade az2 col-3 fragment"
+       data-fragment-index="1" alt="Availability zone 2"></div>
+</div>
+
+<div class="fade-out fragment" data-fragment-index="3">
+  <div class="fade project col-1 row-1 fragment"
+       data-fragment-index="2" alt="Project instance"></div>
+  <div class="fade project col-2 row-2 fragment"
+       data-fragment-index="2" alt="Project instance"></div>
+  <div class="fade project col-2 row-3 fragment"
+       data-fragment-index="2" alt="Project instance"></div>
+  <div class="fade project col-4 row-1 fragment"
+       data-fragment-index="2" alt="Project instance"></div>
+</div>
+
+<div class="fade-out fragment" data-fragment-index="4">
+  <div class="fade flavor col-2 row-1 fragment"
+       data-fragment-index="3" alt="Flavor instance"></div>
+  <div class="fade flavor col-1 row-3 fragment"
+       data-fragment-index="3" alt="Flavor instance"></div>
+</div>
+
+<div class="fade instance col-2 row-1 fragment"
+     data-fragment-index="4" alt="Flavor instance"></div>
+
+Note:
 
 Different cloud operators will want to support different SLAs
 with different workflows.

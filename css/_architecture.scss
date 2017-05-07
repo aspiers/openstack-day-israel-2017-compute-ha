@@ -26,6 +26,35 @@
     }
 }
 
+#cattle, #pets, #configurability {
+    .az1 {
+        background: $light-magenta;
+    }
+
+    .az2 {
+        background: $bright-blue;
+    }
+
+    .project, .flavor, .instance {
+        width: 12%;
+        height: 14.8%;
+        margin: 0.5% -0.5%;
+        border-radius: 6%;
+    }
+
+    .project {
+        background: $medium-orange;
+    }
+
+    .flavor {
+        background: $bright-purple;
+    }
+
+    .instance {
+        background: $bright-blue;
+    }
+}
+
 section.architecture {
     h2 {
         margin-bottom: 0.4em;

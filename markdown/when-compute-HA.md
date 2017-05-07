@@ -94,7 +94,7 @@ Note:
 
 <!-- compute node failure -->
 <img data-src="images/solid-rect.svg"
-     class="compute-node unreachable col-1 fragment"
+     class="compute-node fade col-1 fragment"
      data-fragment-index="17" alt="Unreachable compute node"/>
 <img data-src="images/reboot.png"
      class="reboot-compute-node col-1 fragment"
@@ -146,7 +146,7 @@ you still need something to clean up the mess when things go wrong.
 
 <!-- compute node failure -->
 <img data-src="images/solid-rect.svg"
-     class="compute-node unreachable col-1 fragment"
+     class="compute-node fade col-1 fragment"
      data-fragment-index="3" alt="Unreachable compute node"/>
 <img data-src="images/reboot.png"
      class="reboot-compute-node col-1 fragment"
