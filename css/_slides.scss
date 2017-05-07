@@ -44,8 +44,6 @@
             max-width: 1000%;
             max-height: 1000%;
 
-            position: absolute;
-
             p {
                 //height: 100%;
             }
@@ -55,12 +53,7 @@
             }
 
             img {
-                // Hack to centre image
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
+                // Centre image
                 margin: 0 0 0 0;
 
                 // Blow image up to fit containing <section> whilst
