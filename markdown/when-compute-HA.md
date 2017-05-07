@@ -173,13 +173,16 @@ the manageability benefits of clouds.
 
 ### Why?  <!-- .element: class="fragment" data-fragment-index="2" style="margin-top: 80px" -->
 
-*   Compute <!-- .element: class="fragment" data-fragment-index="2" -->
-    HA needed for cattle as well as pets
-*   Valid <!-- .element: class="fragment" data-fragment-index="3" -->
-    reasons for running pets in OpenStack
-    *   Manageability benefits
-    *   Want to avoid multiple virtual estates
-    *   Too expensive to cloudify legacy workloads
+*   <!-- .element: class="fragment" data-fragment-index="2" -->
+    Compute HA needed for cattle as well as pets
+*   <!-- .element: class="fragment" data-fragment-index="3" -->
+    Valid reasons for running pets in OpenStack
+    *   <!-- .element: class="fragment" data-fragment-index="4" -->
+        Manageability benefits
+    *   <!-- .element: class="fragment" data-fragment-index="5" -->
+        Want to avoid multiple virtual estates
+    *   <!-- .element: class="fragment" data-fragment-index="6" -->
+        Too expensive to cloudify legacy workloads
 
 Note:
 
