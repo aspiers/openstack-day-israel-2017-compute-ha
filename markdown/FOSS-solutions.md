@@ -198,3 +198,8 @@ Note:
 Whole workflow should start with nova mark-host-down if fencing was before
 repeat is not forever
 
+
+<!-- .slide: data-state="normal" id="matrix" data-menu-title="Comparison" data-timing="30"-->
+## Comparison matrix
+
+TODO

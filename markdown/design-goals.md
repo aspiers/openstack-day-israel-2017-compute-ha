@@ -217,9 +217,12 @@ Which failures to handle?
 Different cloud operators will want to support different SLAs
 with different workflows.
 
-*   Optional use of host reservation to ensure minimum level of redundancy
-*   Retry thresholds on recovery of processes and VM instances
-*   Configurable workflows
+*   <!-- .element: class="fragment" -->
+    Optional use of host reservation to ensure minimum level of redundancy
+*   <!-- .element: class="fragment" -->
+    Retry thresholds on recovery of processes and VM instances
+*   <!-- .element: class="fragment" -->
+    Configurable workflows
 
 Note: There is no one-size-fits-all solution to compute HA.
 
@@ -241,31 +244,50 @@ or anyone else using upstream solution
 <!-- .slide: data-state="normal" id="context-aware" data-menu-title="Context-aware recovery" data-timing="60" -->
 ## Design goal: Intelligent, Context-aware Recovery
 
-*   If `nova-compute` fails, VMs are still perfectly healthy
+*   <!-- .element: class="fragment" -->
+    If `nova-compute` fails, VMs are still perfectly healthy
     but unmanageable
     *   Should they be automatically killed?  Depends on
         the workload.
-*   Fault deduplication
+*   <!-- .element: class="fragment" -->
+    Fault deduplication
     *   VM recovery and host recovery could potentially happen within
         small time window and collide
-*   Set host to maintenance mode until recovery is complete
-*   Respect ephemeral storage boundaries where applicable
+*   <!-- .element: class="fragment" -->
+    Set host to maintenance mode until recovery is complete
+*   <!-- .element: class="fragment" -->
+    Respect ephemeral storage boundaries where applicable
 
 
 <!-- .slide: data-state="normal" id="performance" data-menu-title="Performance" data-timing="60" -->
 ## Design goal: Performance
 
-*   Quick response to failures
-    *   Notifications on message bus to ensure recovery workflows are
-        triggered ASAP (instead of polling to start workflows)
-*   Fault prioritization
+*   <!-- .element: class="fragment" -->
+    Quick response to failures
+    *   <!-- .element: class="fragment" -->
+        Push not pull - don't poll
+    *   <!-- .element: class="fragment" -->
+        Notifications on message bus
+*   <!-- .element: class="fragment" -->
+    Fault prioritization / pre-emption
+    *   <!-- .element: class="fragment" -->
+        e.g. host faults pre-empt instance faults
+    *   <!-- .element: class="fragment" -->
+        Pre-emption is visible to operators
 
 
-<!-- .slide: data-state="normal" id="performance" data-menu-title="Conformance" data-timing="60" -->
+<!-- .slide: data-state="normal" id="conformance" data-menu-title="Conformance" data-timing="60" -->
 ## Design goal: Conformance to OpenStack standards
 
-*   Python
-*   `oslo.*`
-*   StackForge
-*   gerrit
-*   CI with unit tests
+*   <!-- .element: class="fragment" -->
+    "Four Opens": Source, Design, Development, Community
+*   <!-- .element: class="fragment" -->
+    Python
+*   <!-- .element: class="fragment" -->
+    `oslo.*`
+*   <!-- .element: class="fragment" -->
+    OpenStack-hosted
+*   <!-- .element: class="fragment" -->
+    gerrit review process
+*   <!-- .element: class="fragment" -->
+    CI with unit tests

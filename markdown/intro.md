@@ -24,6 +24,12 @@
 
 
 <!-- .slide: data-state="normal" id="agenda" data-timing="30" -->
+# Previous Austin talk
+
+TODO: add link
+
+
+<!-- .slide: data-state="normal" id="agenda" data-timing="30" -->
 # Agenda
 
 *   Compute plane HA vs. control plane HA

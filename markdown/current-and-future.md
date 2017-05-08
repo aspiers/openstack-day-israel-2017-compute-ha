@@ -19,6 +19,12 @@
 
 [`openstack-resource-agents-specs` repository](https://github.com/openstack/openstack-resource-agents-specs/tree/master/specs/newton/approved)
 
+*   Host monitoring
+*   Host recovery
+*   VM monitoring
+*   VM recovery
+*   FIXME
+
 
 <!-- .slide: data-state="normal" id="unification" data-timing="60" -->
 # Unification
