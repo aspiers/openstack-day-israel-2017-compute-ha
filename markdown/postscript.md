@@ -6,7 +6,6 @@
        id="talk-end">https://aspiers.github.io/openstack-summit-2017-boston-compute-ha/</a></h3>
 
 
-
 <!-- .slide: data-menu-title="Disclaimers" id="disclaimers" data-state="green-bg" -->
 ### Unpublished Work of SUSE LLC. All Rights Reserved.
 
@@ -38,3 +37,8 @@ referenced in this presentation are trademarks or registered
 trademarks of Novell, Inc. in the United States and other countries.
 All third-party trademarks are the property of their respective
 owners.
+
+
+<!-- .slide: data-menu-title="License" class="full-screen" id="license" data-state="blank-slide" -->
+<img data-src="images/by-sa.svg"
+     alt="Creative Commons BY-SA license" />

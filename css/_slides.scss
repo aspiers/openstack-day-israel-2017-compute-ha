@@ -31,22 +31,6 @@
             height: auto;
         }
 
-        .full-slide {
-            height: 100%;
-        }
-
-        .full-slide img, img.full-slide {
-            /* Blow image up to full screen size */
-            display: block;
-            width: 100%;
-            height: auto;
-            max-width: 100%;
-            max-height: 100%;
-            margin: auto;
-            top: 0;
-            left: 0;
-        }
-
         .full-screen {
             // True up section back to almost full slide dimensions.
             $fs-left-margin: 25px;
@@ -64,6 +48,32 @@
             // Make sure the max dimensions don't get in the way.
             max-width: 1000%;
             max-height: 1000%;
+
+            p {
+                //height: 100%;
+            }
+
+            a {
+                position: inherit;
+            }
+
+            img, iframe {
+                // Centre image
+                margin: 0 0 0 0;
+
+                // Blow image up to fit containing <section> whilst
+                // retaining aspect ratio.
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+
+                // Ensure image's size is not constrained.  This can
+                // also help fit an image to its container, but without
+                // setting width or height it won't scale beyond its
+                // original size.
+                max-width: 100%;
+                max-height: 100%;
+            }
         }
     }
 
@@ -95,8 +105,12 @@
         margin-bottom: 0.2rem;
     }
 
-    ul + h3 {
+    ul + h3, ul + p {
         margin-top: 0.8em;
+    }
+
+    li + li {
+        margin-top: 0.4em;
     }
 
     h3 {
@@ -172,6 +186,7 @@
             $bullet-padding: 40px;
 
             margin-left: 20px;
+            margin-top: 0.6em;
             padding-left: $bullet-padding;
             border: $debug 1px yellow;
             list-style-type: none;
@@ -195,9 +210,6 @@
         }
 
         li {
-            // If we also set this for margin-bottom, we'd
-            // get double-space when exiting a nested list.
-            margin-top: 0.2rem;
             border: $debug 1px blue;
             padding: 0 0;
         }

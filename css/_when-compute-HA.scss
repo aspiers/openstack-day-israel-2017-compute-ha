@@ -14,7 +14,9 @@
 
     img {
         display: block;
-        width: 500px;
+        width: 48%;
+        object-fit: contain;
+        margin-top: -5%;
     }
 
     .pets {
@@ -31,9 +33,88 @@
     }
 }
 
-#pets-vs-cattle-2 {
-    ul {
-        font-size: 1.1em;
+#cattle, #pets, #configurability {
+    img.cloud {
+        width: 100%;
+        height: 87%;
+        margin-top: -2%;
+    }
+
+    img, svg, .fade {
+        position: absolute;
+    }
+
+    $top-row: 36%;
+    $left-col: 19%;
+
+    $col-delta: 16%;
+    $row-delta: 15%;
+    $compute-node-width: 15%;
+
+    .compute-node, .two-compute-nodes {
+        width: $compute-node-width;
+        top: $top-row - 3%;
+        margin-left: -2%;
+    }
+
+    .two-compute-nodes {
+        width: $compute-node-width + $col-delta;
+    }
+
+    .reboot-compute-node {
+        width: 15%;
+        top: $top-row + 10%;
+        margin-left: -2%;
+    }
+
+    .fade {
+        border-radius: 9%;
+        background: $bright-red;
+        opacity: 0.6;
+        height: 50%;
+        margin-top: 1%;
+    }
+
+    .col-1 {
+        left: $left-col;
+    }
+
+    .col-2 {
+        left: $left-col + $col-delta;
+    }
+
+    .col-3 {
+        left: $left-col + 2*$col-delta;
+    }
+
+    .col-4 {
+        left: $left-col + 3*$col-delta;
+    }
+
+    .cow {
+        width: 11%;
+    }
+
+    .kitteh {
+        width: 12%;
+        margin-top: 1.5%;
+        margin-left: -0.5%;
+    }
+
+    .cow-bang {
+        width: 11%;
+        margin-left: -1%;
+        margin-top: -1%;
+    }
+
+    .row-1 {
+        top: $top-row;
+    }
+    .row-2 {
+        top: $top-row + $row-delta;
+    }
+    .row-3 {
+        top: $top-row + 2*$row-delta;
     }
 }
 

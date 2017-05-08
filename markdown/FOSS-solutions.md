@@ -33,9 +33,9 @@ Note:
     *   Start waits for recovery to complete
 
 
-<!-- .slide: data-state="blank" id="SOC-demo" data-menu-title="SOC demo" data-timing="200" -->
+<!-- .slide: data-state="blank" id="SOC-demo" class="full-screen" data-menu-title="SOC demo" data-timing="200" -->
 <iframe data-src="https://www.youtube.com/embed/OrsiP86rGM8"
-        class="full-screen" frameborder="0" allowfullscreen></iframe>
+        frameborder="0" allowfullscreen></iframe>
 
 
 <!-- .slide: data-state="normal" id="ocf-pros-cons" data-menu-title="OCF RA pros and cons" data-timing="30" -->

@@ -128,16 +128,78 @@ We assume that Pacemaker is reliable, otherwise we're sunk!
 <!-- .slide: data-state="normal" id="operability" data-menu-title="Operability" data-timing="60" -->
 ## Design goal: Operability
 
-FIXME: API image here?
+<figure>
+    <img alt="API" data-src="images/API.jpg" style="width: 100%" />
+</figure>
+
+Note:
 
 Cloud operators need an API to access details of ongoing and
 historical alerts and corresponding actions.
 
-Eventually could be incorporated into Horizon.
+This could be incorporated into Horizon.
 
 
 <!-- .slide: data-state="normal" id="configurability" data-menu-title="Configurability" data-timing="60" -->
 ## Design goal: Configurability
+
+<img data-src="images/cloud.jpg" class="cloud" alt="cloud outline" />
+
+<!-- compute nodes -->
+<img data-src="images/rounded-rect.svg" class="compute-node col-1"
+     alt="Compute node" />
+<img data-src="images/rounded-rect.svg" class="compute-node col-2"
+     alt="Compute node" />
+<img data-src="images/rounded-rect.svg" class="compute-node col-3"
+     alt="Compute node" />
+<img data-src="images/rounded-rect.svg" class="compute-node col-4"
+     alt="Compute node" />
+
+<img data-src="images/brown-cow.jpg" class="cow row-1 col-1" alt="cattle" />
+<img data-src="images/kitten.jpg" class="kitteh row-1 col-2" alt="kitteh" />
+<img data-src="images/brown-cow.jpg" class="cow row-1 col-3" alt="cattle" />
+<img data-src="images/CowFace-c.jpg" class="cow row-1 col-4" alt="cattle" />
+
+<img data-src="images/brown-cow.jpg" class="cow row-2 col-1" alt="cattle" />
+<img data-src="images/CowFace-c.jpg" class="cow row-2 col-2" alt="cattle" />
+<img data-src="images/CowFace-c.jpg" class="cow row-2 col-3" alt="cattle" />
+<img data-src="images/brown-cow.jpg" class="cow row-2 col-4" alt="cattle" />
+
+<img data-src="images/kitten.jpg" class="kitteh row-3 col-1" alt="kitteh" />
+<img data-src="images/CowFace-c.jpg" class="cow row-3 col-2" alt="cattle" />
+
+<!-- Configure by AZ -->
+<div class="fade-out fragment" data-fragment-index="2">
+  <div class="two-compute-nodes fade az1 col-1 fragment"
+       data-fragment-index="1" alt="Availability zone 1"></div>
+  <div class="two-compute-nodes fade az2 col-3 fragment"
+       data-fragment-index="1" alt="Availability zone 2"></div>
+</div>
+
+<!-- Configure by project -->
+<div class="fade-out fragment" data-fragment-index="4">
+  <div class="fade project col-2 row-2 fragment"
+       data-fragment-index="3" alt="Project instance"></div>
+  <div class="fade project col-3 row-2 fragment"
+       data-fragment-index="3" alt="Project instance"></div>
+  <div class="fade project col-2 row-3 fragment"
+       data-fragment-index="3" alt="Project instance"></div>
+  <div class="fade project col-4 row-1 fragment"
+       data-fragment-index="3" alt="Project instance"></div>
+</div>
+
+<!-- Configure by flavor -->
+<div class="fade-out fragment" data-fragment-index="6">
+  <div class="fade flavor col-2 row-1 fragment"
+       data-fragment-index="5" alt="Flavor instance"></div>
+  <div class="fade flavor col-1 row-3 fragment"
+       data-fragment-index="5" alt="Flavor instance"></div>
+</div>
+
+<div class="fade instance col-2 row-1 fragment"
+     data-fragment-index="7" alt="Flavor instance"></div>
+
+Note:
 
 Different cloud operators will want to support different SLAs
 with different workflows.
@@ -148,8 +210,6 @@ Which failures to handle?
 *   All instances of a flavor?
 *   Individually selected instances?
 
-**TODO**: replace animated diagram
-
 
 <!-- .slide: data-state="normal" id="configurability-2" data-menu-title="Configurability (2)" data-timing="60" -->
 ## Design goal: Configurability (2)
@@ -159,7 +219,7 @@ with different workflows.
 
 *   Optional use of host reservation to ensure minimum level of redundancy
 *   Retry thresholds on recovery of processes and VM instances
-*   Configurable workflows?
+*   Configurable workflows
 
 Note: There is no one-size-fits-all solution to compute HA.
 
