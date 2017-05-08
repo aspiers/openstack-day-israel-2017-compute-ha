@@ -251,8 +251,7 @@ or anyone else using upstream solution
         the workload.
 *   <!-- .element: class="fragment" -->
     Fault deduplication
-    *   VM recovery and host recovery could potentially happen within
-        small time window and collide
+    *   VM recovery and host recovery could collide
 *   <!-- .element: class="fragment" -->
     Set host to maintenance mode until recovery is complete
 *   <!-- .element: class="fragment" -->
