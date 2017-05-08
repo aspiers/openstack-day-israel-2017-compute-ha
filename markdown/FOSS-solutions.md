@@ -216,7 +216,108 @@ Whole workflow should start with nova mark-host-down if fencing was before
 repeat is not forever
 
 
-<!-- .slide: data-state="normal" id="matrix" data-menu-title="Comparison" data-timing="30"-->
+<!-- .slide: data-state="normal" id="comparison" data-menu-title="Comparison" data-timing="30"-->
 ## Comparison matrix
 
-TODO
+<table class="waffle" cellspacing="0" cellpadding="0">
+  <thead>
+    <tr>
+      <th class="criterion-class">
+        <div></div>
+      </th>
+      <th class="criteria" />
+      <th>OCF Agents</th>
+      <th>Masakari</th>
+      <th>Best of breed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="criterion-class policy" rowspan="2">
+        <div>Policy</div>
+      </td>
+      <td class="criteria">Configurable scope</td>
+      <td class="no">No</td>
+      <td class="maybe">Possible</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td class="criteria">Configurable retries</td>
+      <td class="no">No</td>
+      <td class="maybe">In progress</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td class="criterion-class resilience" rowspan="4">
+        <div>Resilience</div>
+      </td>
+      <td class="criteria">Host monitoring</td>
+      <td class="yes">Pacemaker</td>
+      <td class="no">Custom</td>
+      <td class="yes">Pacemaker</td>
+    </tr>
+    <tr>
+      <td class="criteria">Process monitoring</td>
+      <td class="yes">Pacemaker</td>
+      <td class="no">Custom</td>
+      <td class="yes">Pacemaker</td>
+    </tr>
+    <tr>
+      <td class="criteria">Handles control plane failures</td>
+      <td class="maybe">Relies on `nova`</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td class="criteria">Monitoring of VM's (external) health</td>
+      <td class="no">No</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td class="criterion-class recovery" rowspan="5">
+        <div>Recovery</div>
+      </td>
+      <td class="criteria">Operable via API</td>
+      <td class="no">No</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td class="criteria">Host reservation</td>
+      <td class="no">No</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td class="criteria">Configurable workflows</td>
+      <td class="no">No</td>
+      <td class="maybe">Spec drafted</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td class="criteria">Disable failed `nova‑compute`</td>
+      <td class="no">No</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td class="criteria">Fully parallel workflow</td>
+      <td class="no">No</td>
+      <td class="maybe">FIXME</td>
+      <td class="yes">Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+Note:
+
+*   Left column groups capabilities into 3 categories
+*   Policy-based workflows via Congress
+*   Two capabilities uniquely in masakari which need to be in
+    future solutions
+
+Common functionality:
+*   Tolerate simultaneous failures in compute / control planes
+*   Retry failed evacuations
+*   Monitor node and hypervisor health
