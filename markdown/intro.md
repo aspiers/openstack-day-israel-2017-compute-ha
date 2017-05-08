@@ -23,10 +23,12 @@
 </div>
 
 
-<!-- .slide: data-state="normal" id="agenda" data-timing="30" -->
-# Previous Austin talk
+<!-- .slide: data-state="normal" id="sequel" data-timing="30" -->
+# Compute HA: the sequel!
 
-TODO: add link
+<div class="qrcode" id="qrcode-sequel"/>
+<h3 style="text-align: center"><a href="https://aspiers.github.io/openstack-summit-2016-austin-compute-ha/" target="_blank"
+       id="sequel"><!-- https://goo.gl/KXkRXy -->https://aspiers.github.io/openstack-summit-2016-austin-compute-ha/</a></h3>
 
 
 <!-- .slide: data-state="normal" id="agenda" data-timing="30" -->
