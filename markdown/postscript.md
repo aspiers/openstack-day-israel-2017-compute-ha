@@ -2,7 +2,7 @@
 # Questions?
 
 <div class="qrcode" id="qrcode-talk-end"/>
-<h3><a href="https://aspiers.github.io/openstack-summit-2017-boston-compute-ha/" target="_blank"
+<h3 style="text-align: center"><a href="https://aspiers.github.io/openstack-summit-2017-boston-compute-ha/" target="_blank"
        id="talk-end">https://aspiers.github.io/openstack-summit-2017-boston-compute-ha/</a></h3>
 
 
