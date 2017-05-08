@@ -65,13 +65,25 @@ Note:
     <span class="fragment" data-fragment-index="1">
         <img alt="masakari architecture"
              class="masakari architecture fragment fade-out" data-fragment-index="2"
-             data-src="images/masakari-architecture.svg" />
+             data-src="images/masakari-architecture2.svg" />
     </span>
 
     <span class="fragment" data-fragment-index="2">
-        <img alt="masakari failure domains"
+        <img alt="masakari process failure"
+             class="masakari architecture fragment fade-out" data-fragment-index="3"
+             data-src="images/masakari-processdown.svg" />
+    </span>
+
+    <span class="fragment" data-fragment-index="3">
+        <img alt="masakari vm failure"
+             class="masakari architecture fragment fade-out" data-fragment-index="4"
+             data-src="images/masakari-vmdown.svg" />
+    </span>
+
+    <span class="fragment" data-fragment-index="4">
+        <img alt="masakari host failure"
              class="masakari architecture"
-             data-src="images/masakari-failure-domains.svg" />
+             data-src="images/masakari-hostdown.svg" />
     </span>
 </div>
 
@@ -86,13 +98,18 @@ Note:
     *   VM down (detected via `libvirt`)
 
 
-<!-- .slide: data-state="normal" id="masakari-installation" data-timing="20" -->
-## Masakari installation
+<!-- .slide: data-state="normal" id="about-masakari" data-timing="20" -->
+## About Masakari
 
-*   https://github.com/ntt-sic/masakari
-*   [1.1.0 release](https://github.com/ntt-sic/masakari/releases/tag/1.1.0):
-    `pacemaker_remote`, CentOS, SQLAlchemy
-*   Requires manual compilation of `pacemaker_remote` on Ubuntu 14.04
+*   [Masakari Wiki](https://wiki.openstack.org/wiki/Masakari)
+*   [Current Stable Release: stable/ocata](https://github.com/openstack/masakari/tree/stable/ocata)
+    * Enhanced recovery engine to supports customizable recovery patterns
+    * Retry for failed recovery workflows
+    * Conformance to OpenStack standards
+*  Work in progress
+    * Documentation
+    * Recovery method customization and Mistral Integration to support more drivers
+    * Ironic support: Make volume boot ironic instances are highly available
 
 
 <!-- .slide: data-state="normal" id="masakari-pros-cons" data-timing="30" -->
