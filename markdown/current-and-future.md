@@ -33,7 +33,7 @@
 
 <!-- .slide: data-state="normal" id="existing-architecture" data-timing="60" -->
 
-<div class="architecture">
+<div class="new-architecture">
     <img alt="Standard architecture with pacemaker_remote"
          class="architecture"
          data-src="images/OCF-architecture.svg" />
@@ -42,7 +42,7 @@
 
 <!-- .slide: data-state="normal" id="unified-architecture" data-timing="60" -->
 
-<div class="architecture">
+<div class="new-architecture">
     <img alt="Standard architecture with pacemaker_remote"
          class="architecture"
          data-src="images/unified-architecture.svg" />
@@ -57,9 +57,9 @@ Note:
 - Replace masakari-processmonitor with standard Pacemaker process monitoring
 
 
-<!-- .slide: data-state="normal" id="unified-architecture+mistral" data-timing="60" -->
+<!-- .slide: data-state="normal" id="unified-architecture-mistral" data-timing="60" -->
 
-<div class="architecture">
+<div class="new-architecture">
     <img alt="Standard architecture with pacemaker_remote"
          class="architecture"
          data-src="images/unified-architecture+mistral.svg" />
@@ -68,7 +68,7 @@ Note:
 
 <!-- .slide: data-state="normal" id="grand-unified-architecture" data-timing="60" -->
 
-<div class="architecture">
+<div class="new-architecture">
     <img alt="Standard architecture with pacemaker_remote"
          class="architecture"
          data-src="images/grand-unified-architecture.svg" />

@@ -108,3 +108,13 @@
         }
     }
 }
+
+section div.new-architecture {
+    img {
+        // Images are aligned at left top but not equal dimensions
+        transform: scale(1.3);
+        transform-origin: left top;
+        margin: -1% auto auto 5%;
+        display: block;
+    }
+}
