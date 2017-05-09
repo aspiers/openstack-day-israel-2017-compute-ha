@@ -198,3 +198,9 @@ EOL whilst gradually migrating over to next-generation architectures.
 
 This is a controversial topic, but naysayers tend to favour idealism
 over real world pragmatism.
+
+
+<!-- .slide: data-state="blank-slide" class="full-screen" id="user-story" data-menu-title="User story" data-timing="10s" -->
+<a href="http://specs.openstack.org/openstack/openstack-user-stories/user-stories/proposed/ha_vm.html">
+    <img alt="User story" src="images/user-story.png"/>
+</a>

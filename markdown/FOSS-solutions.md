@@ -106,114 +106,22 @@ Note:
     * Enhanced recovery engine to supports customizable recovery patterns
     * Retry for failed recovery workflows
     * Conformance to OpenStack standards
-*  Work in progress
-    * Documentation
-    * Recovery method customization and Mistral Integration to support more drivers
-    * Ironic support: Make volume boot ironic instances are highly available
-
-
-<!-- .slide: data-state="normal" id="masakari-pros-cons" data-timing="30" -->
-## Masakari analysis
-
-### Pros
-
-*   Monitors VM health (externally)
-*   More sophisticated recovery workflows
-*   API provides operability
-*   Conforms to OpenStack standards
-
-### Cons
-
-*   Duplicates Pacemaker's host monitoring and process management
-
-Note:
-- Failing `nova-compute` service will be disabled
-- Basically only uses Pacemaker as monitoring / fencing service
-- Waits 5 minutes after fencing
-
-
-<!-- .slide: data-state="section-break" id="mistral-intro" data-timing="10" -->
-# Mistral-based solution
 
 
 <!-- .slide: data-state="normal" id="mistral" data-menu-title="Mistral" data-timing="60"-->
+## Mistral recovery workflow
 
 <div>
-    <img style="height: 80%; left: 55%; position: absolute" alt="Simple mistral workflow"
-         data-src="images/mistral-simple-workflow.svg" />
-</div>
-
-## Mistral
-*   Workflow as a service
-*   Enables user to create any workflows
-*   May be expansible with custom action
-*   Workflow execution may be triggered by:
-    *   events from ceilometer
-    *   at a certain time (cloud cron)
-    *   on demand (API call)
-
-Note:
-Next solution is based on mistral. Before I proceed with explaining this solution, I would like to tell you what Mistral is.
-As you already read, mistral is 'workflow as a service' service. By using it, you can define a set of tasks and connect them into logical graph. For each task, you can define what to do in case of failure or success. Moreover, if predefined tasks are not enaugh for you, you can write your own actions and plugin them into mistral. Those actions are literaly python class, so you can do anything inside of them.
-Once workflow is created, it can be triggered by various ways. Ceilometer, time, or, what is used in instance-ha mistral based solution, on demand via API.
-
-
-<!-- .slide: data-state="normal" id="mistral-architecture" data-menu-title="Mistral" class="architecture" data-timing="60"-->
-## Mistral-based resurrection workflow
-
-<div class="architecture">
-    <img alt="Standard architecture with pacemaker_remote"
-         class="architecture fragment fade-out" data-fragment-index="1"
-         data-src="images/standard-architecture.svg" />
-
-    <span class="fragment" data-fragment-index="1">
-        <img alt="mistral architecture"
-             class="mistral architecture fragment fade-out" data-fragment-index="2"
-             data-src="images/mistral-architecture.svg" />
-    </span>
-
-    <span class="fragment" data-fragment-index="2">
-        <img alt="mistral failure domains"
-             class="mistral architecture"
-             data-src="images/mistral-failure-domains.svg" />
-    </span>
-</div>
-
-
-<!-- .slide: data-state="normal" id="mistral-summary" data-menu-title="Mistral summary" data-timing="40"-->
-## Mistral-based resurrection workflow
-
-*   https://github.com/gryf/mistral-evacuate
-
-### Pros
-
-*   In line with upstream OpenStack strategy
-*   Clean, simple approach
-*   Potential for integration with Congress for policy-based workflows
-
-### Cons
-
-*   Still experimental code; not yet usable by most
-*   Mistral resilience WIP
-
-Note:
-Reuses components rather than adding yet another project
-We can make different decision based on failure type using congress
-Marking vms as pets
-Describe problem with mistral HA
-
-
-<!-- .slide: data-state="normal" id="mistral-workflow" data-menu-title="Mistral workflow" data-timing="30"-->
-## Evacuate workflow
-
-<div>
-    <img style="height: 80%; margin-left: 30%" alt="Evacuate Workflow"
+    <img style="height: 80%; left: 55%; position: absolute" alt="Recovery workflow"
          data-src="images/workflow.svg" />
 </div>
 
-Note:
-Whole workflow should start with nova mark-host-down if fencing was before
-repeat is not forever
+*   Workflow as a service
+*   <!-- .element: class="fragment" -->
+    Enables user to create any workflows
+*   <!-- .element: class="fragment" -->
+    PoC for compute host recovery:
+    *   https://github.com/gryf/mistral-evacuate
 
 
 <!-- .slide: data-state="normal" id="comparison" data-menu-title="Comparison" data-timing="30"-->
@@ -238,13 +146,13 @@ repeat is not forever
       </td>
       <td class="criteria">Configurable scope</td>
       <td class="no">No</td>
-      <td class="maybe">Possible</td>
-      <td class="yes">Yes</td>
+      <td class="maybe">By instance</td>
+      <td class="yes">Planned</td>
     </tr>
     <tr>
       <td class="criteria">Configurable retries</td>
       <td class="no">No</td>
-      <td class="maybe">In progress</td>
+      <td class="yes">Done</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
@@ -264,9 +172,7 @@ repeat is not forever
     </tr>
     <tr>
       <td class="criteria">Handles control plane failures</td>
-      <td class="maybe">Relies on `nova`</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
+      <td class="maybe" colspan="3">Needs improvements in `nova`</td>
     </tr>
     <tr>
       <td class="criteria">Monitoring of VM's (external) health</td>
@@ -275,7 +181,7 @@ repeat is not forever
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td class="criterion-class recovery" rowspan="5">
+      <td class="criterion-class recovery" rowspan="6">
         <div>Recovery</div>
       </td>
       <td class="criteria">Operable via API</td>
@@ -285,6 +191,12 @@ repeat is not forever
     </tr>
     <tr>
       <td class="criteria">Host reservation</td>
+      <td class="no">No</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td class="criteria">Failover segments</td>
       <td class="no">No</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -304,7 +216,7 @@ repeat is not forever
     <tr>
       <td class="criteria">Fully parallel workflow</td>
       <td class="no">No</td>
-      <td class="maybe">FIXME</td>
+      <td class="yes">Taskflow</td>
       <td class="yes">Yes</td>
     </tr>
   </tbody>
@@ -313,9 +225,6 @@ repeat is not forever
 Note:
 
 *   Left column groups capabilities into 3 categories
-*   Policy-based workflows via Congress
-*   Two capabilities uniquely in masakari which need to be in
-    future solutions
 
 Common functionality:
 *   Tolerate simultaneous failures in compute / control planes
