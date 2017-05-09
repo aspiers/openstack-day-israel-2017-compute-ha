@@ -27,8 +27,8 @@
 # Compute HA: the sequel!
 
 <div class="qrcode" id="qrcode-sequel"/>
-<h3 style="text-align: center"><a href="https://aspiers.github.io/openstack-summit-2016-austin-compute-ha/" target="_blank"
-       id="sequel"><!-- https://goo.gl/KXkRXy -->https://aspiers.github.io/openstack-summit-2016-austin-compute-ha/</a></h3>
+<h3 style="text-align: center"><a href="https://www.openstack.org/videos/video/high-availability-for-pets-and-hypervisors-state-of-the-nation" target="_blank"
+       style="font-size: 0.85em" id="sequel">https://www.openstack.org/videos/video/high-availability-for-pets-and-hypervisors-state-of-the-nation</a></h3>
 
 
 <!-- .slide: data-state="normal" id="agenda" data-timing="30" -->
