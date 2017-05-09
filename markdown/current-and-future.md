@@ -2,7 +2,7 @@
 # Current and future work
 
 
-<!-- .slide: data-state="normal" id="modular" data-timing="60" -->
+<!-- .slide: data-state="normal" id="modular" data-timing="30" -->
 # Modular architecture
 
 *   <!-- .element: class="fragment" -->
@@ -10,11 +10,13 @@
     *   <!-- .element: class="fragment" -->
         Host monitoring / recovery
     *   <!-- .element: class="fragment" -->
-        Process monitoring / recovery
-    *   <!-- .element: class="fragment" -->
         VM monitoring / recovery
+    *   <!-- .element: class="fragment" -->
+        Process monitoring / recovery
 *   <!-- .element: class="fragment" -->
     Agreed to split into independent components
+*   <!-- .element: class="fragment" -->
+    https://etherpad.openstack.org/p/newton-instance-ha
 
 
 <!-- .slide: data-state="normal" id="specs" data-timing="60" -->
@@ -22,16 +24,23 @@
 
 [`openstack-resource-agents-specs` repository](https://github.com/openstack/openstack-resource-agents-specs/tree/master/specs/newton/approved)
 
-*   Host monitoring
-*   Host recovery
-*   VM monitoring
-*   VM recovery
-*   `libvirtd` OCF RA
+*   <!-- .element: class="fragment" -->
+    Host monitoring
+*   <!-- .element: class="fragment" -->
+    Host recovery
+*   <!-- .element: class="fragment" -->
+    VM monitoring
+*   <!-- .element: class="fragment" -->
+    VM recovery
+*   <!-- .element: class="fragment" -->
+    `libvirtd` OCF RA
     *   to take action if migration-threshold reached
-*   `NovaCompute` OCF RA
+*   <!-- .element: class="fragment" -->
+    `NovaCompute` OCF RA
+    *   ditto
 
 
-<!-- .slide: data-state="normal" id="existing-architecture" data-timing="60" -->
+<!-- .slide: data-state="normal" id="existing-architecture" data-menu-title="OCF architecture" data-timing="60" -->
 
 <div class="new-architecture">
     <img alt="Standard architecture with pacemaker_remote"
@@ -40,7 +49,7 @@
 </div>
 
 
-<!-- .slide: data-state="normal" id="unified-architecture" data-timing="60" -->
+<!-- .slide: data-state="normal" id="unified-architecture" data-menu-title="Driver-based alerting RA" data-timing="60" -->
 
 <div class="new-architecture">
     <img alt="Standard architecture with pacemaker_remote"
@@ -57,7 +66,7 @@ Note:
 - Replace masakari-processmonitor with standard Pacemaker process monitoring
 
 
-<!-- .slide: data-state="normal" id="unified-architecture-mistral" data-timing="60" -->
+<!-- .slide: data-state="normal" id="unified-architecture-mistral" data-menu-title="Mistral architecture" data-timing="30" -->
 
 <div class="new-architecture">
     <img alt="Standard architecture with pacemaker_remote"
@@ -66,7 +75,7 @@ Note:
 </div>
 
 
-<!-- .slide: data-state="normal" id="grand-unified-architecture" data-timing="60" -->
+<!-- .slide: data-state="normal" id="grand-unified-architecture" data-menu-title="Grand unified architecture" data-timing="30" -->
 
 <div class="new-architecture">
     <img alt="Standard architecture with pacemaker_remote"
@@ -94,7 +103,8 @@ Note:
 *   Ironic support: Make volume boot ironic instances are highly available
 *   Submit to Big Tent
 
-### nova
+### nova <!-- .element: class="fragment" data-fragment-index="1" -->
 
-*   `nova evacuate` API progress could work similar to
+*   <!-- .element: class="fragment" data-fragment-index="1" -->
+    `nova evacuate` API progress could work similar to
     `nova live-migration` progress

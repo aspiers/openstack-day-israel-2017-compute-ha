@@ -33,7 +33,7 @@ Note:
     *   Start waits for recovery to complete
 
 
-<!-- .slide: data-state="blank" id="SOC-demo" class="full-screen" data-menu-title="SOC demo" data-timing="200" -->
+<!-- .slide: data-state="blank" id="SOC-demo" class="full-screen" data-menu-title="SOC demo" data-timing="15" -->
 <iframe data-src="https://www.youtube.com/embed/OrsiP86rGM8"
         frameborder="0" allowfullscreen></iframe>
 
@@ -54,7 +54,7 @@ Note:
     *   Some corner cases still problematic, e.g. if `nova` fails during recovery
 
 
-<!-- .slide: data-state="normal" id="masakari-architecture" class="architecture" data-timing="50" -->
+<!-- .slide: data-state="normal" id="masakari-architecture" class="architecture" data-timing="120" -->
 ## Masakari architecture
 
 <div class="architecture">
@@ -98,7 +98,7 @@ Note:
     *   VM down (detected via `libvirt`)
 
 
-<!-- .slide: data-state="normal" id="about-masakari" data-timing="20" -->
+<!-- .slide: data-state="normal" id="about-masakari" data-timing="30" -->
 ## About Masakari
 
 *   [Masakari Wiki](https://wiki.openstack.org/wiki/Masakari)
@@ -108,7 +108,7 @@ Note:
     * Conformance to OpenStack standards
 
 
-<!-- .slide: data-state="normal" id="mistral" data-menu-title="Mistral" data-timing="60"-->
+<!-- .slide: data-state="normal" id="mistral" data-menu-title="Mistral" data-timing="30"-->
 ## Mistral recovery workflow
 
 <div>

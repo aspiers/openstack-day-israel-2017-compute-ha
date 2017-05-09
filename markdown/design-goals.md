@@ -1,4 +1,4 @@
-<!-- .slide: data-state="section-break" id="design-goals" data-timing="20" -->
+<!-- .slide: data-state="section-break" id="design-goals" data-timing="10" -->
 # Design goals
 
 
@@ -47,7 +47,7 @@ Scalability issue solved by `pacemaker_remote`
 *   Can scale to very large numbers
 
 
-<!-- .slide: data-state="normal" id="failure-modes" class="architecture" data-menu-title="Failure modes" data-timing="120" -->
+<!-- .slide: data-state="normal" id="failure-modes" class="architecture" data-menu-title="Failure modes" data-timing="45" -->
 ## Design goal: handle different failure modes
 
 <div class="architecture">
@@ -125,7 +125,7 @@ Note:
 We assume that Pacemaker is reliable, otherwise we're sunk!
 
 
-<!-- .slide: data-state="normal" id="operability" data-menu-title="Operability" data-timing="60" -->
+<!-- .slide: data-state="normal" id="operability" data-menu-title="Operability" data-timing="30" -->
 ## Design goal: Operability
 
 <figure>
@@ -140,7 +140,7 @@ historical alerts and corresponding actions.
 This could be incorporated into Horizon.
 
 
-<!-- .slide: data-state="normal" id="configurability" data-menu-title="Configurability" data-timing="60" -->
+<!-- .slide: data-state="normal" id="configurability" data-menu-title="Configurability" data-timing="30" -->
 ## Design goal: Configurability
 
 <img data-src="images/cloud.jpg" class="cloud" alt="cloud outline" />
@@ -211,7 +211,7 @@ Which failures to handle?
 *   Individually selected instances?
 
 
-<!-- .slide: data-state="normal" id="configurability-2" data-menu-title="Configurability (2)" data-timing="60" -->
+<!-- .slide: data-state="normal" id="configurability-2" data-menu-title="Configurability (2)" data-timing="30" -->
 ## Design goal: Configurability (2)
 
 Different cloud operators will want to support different SLAs
@@ -227,7 +227,7 @@ with different workflows.
 Note: There is no one-size-fits-all solution to compute HA.
 
 
-<!-- .slide: data-state="normal" id="upgradability" data-timing="60" -->
+<!-- .slide: data-state="normal" id="upgradability" data-timing="30" -->
 # Upgradability
 
 <figure>
@@ -251,7 +251,6 @@ or anyone else using upstream solution
         the workload.
 *   <!-- .element: class="fragment" -->
     Fault deduplication
-    *   VM recovery and host recovery could collide
 *   <!-- .element: class="fragment" -->
     Set host to maintenance mode until recovery is complete
 *   <!-- .element: class="fragment" -->
@@ -275,7 +274,7 @@ or anyone else using upstream solution
         Pre-emption is visible to operators
 
 
-<!-- .slide: data-state="normal" id="conformance" data-menu-title="Conformance" data-timing="60" -->
+<!-- .slide: data-state="normal" id="conformance" data-menu-title="Conformance" data-timing="40" -->
 ## Design goal: Conformance to OpenStack standards
 
 *   <!-- .element: class="fragment" -->
