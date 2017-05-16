@@ -1,9 +1,7 @@
 <!-- .slide: data-state="normal" id="about" data-timing="0" -->
 # About this presentation
 
-<!--
-*   You can now [watch the video of this presentation online](https://link/to/presentation/video)
--->
+*   You can now [watch the video of this presentation online](https://www.openstack.org/videos/boston-2017/high-availability-for-instances-moving-to-a-converged-upstream-solution).
 
 *   Press `?` for help on navigating these slides
 *   Press `m` for a slide menu
