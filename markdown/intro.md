@@ -1,4 +1,4 @@
-<!-- .slide: data-state="cover" id="cover-page" data-menu-title="Compute node HA" data-timing="20" -->
+<!-- .slide: data-state="cover" id="cover-page" data-menu-title="Compute node HA" data-timing="30" -->
 <div class="title">
     <h1>High Availability for Instances</h1>
     <h2 style="margin-bottom: 50px;">Moving to a Converged Upstream Solution</h2>
