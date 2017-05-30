@@ -23,7 +23,9 @@
 
 <div class="qrcode" id="qrcode-sequel"/>
 <h3 style="text-align: center"><a href="https://www.openstack.org/videos/video/high-availability-for-pets-and-hypervisors-state-of-the-nation" target="_blank"
-       style="font-size: 0.85em" id="sequel">https://www.openstack.org/videos/video/high-availability-for-pets-and-hypervisors-state-of-the-nation</a></h3>
+       style="font-size: 0.80em" id="sequel">https://www.openstack.org/videos/video/high-availability-for-pets-and-hypervisors-state-of-the-nation</a></h3>
+
+<h3 style="text-align: center"><a href="https://goo.gl/mgeiw3" style="font-size: 0.80em" target="_blank">https://goo.gl/mgeiw3</a></h3>
 
 
 <!-- .slide: data-state="normal" id="agenda" data-timing="30" -->
