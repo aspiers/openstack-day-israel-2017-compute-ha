@@ -129,7 +129,7 @@ Note:
 
 <img data-src="images/brown-cow.jpg" class="cow row-1 col-1 fragment" alt="cattle"
      data-fragment-index="2" />
-<img data-src="images/kitten.jpg" class="kitteh row-1 col-2 fragment" alt="kitteh"
+<img data-src="images/orange-kitten.jpg" class="kitteh2 row-1 col-2 fragment" alt="kitteh"
      data-fragment-index="2" />
 <img data-src="images/brown-cow.jpg" class="cow row-1 col-3 fragment" alt="cattle"
      data-fragment-index="2" />
@@ -148,6 +148,8 @@ Note:
 <img data-src="images/kitten.jpg" class="kitteh row-3 col-1 fragment" alt="kitteh"
      data-fragment-index="2" />
 <img data-src="images/brown-cow.jpg" class="cow row-3 col-2 fragment" alt="cattle"
+     data-fragment-index="2" />
+<img data-src="images/kitten2.jpg" class="kitteh3 row-3 col-3 fragment" alt="cattle"
      data-fragment-index="2" />
 
 <!-- compute node failure -->
