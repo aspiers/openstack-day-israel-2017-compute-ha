@@ -14,8 +14,10 @@
          alt="database and message queue cluster" />
 </div>
 
-*   Automatic restart of controller services
-*   Increases uptime of cloud
+*   <!-- .element: class="fragment" -->
+    Automatic restart of controller services
+*   <!-- .element: class="fragment" -->
+    Increases uptime of cloud
 
 <div class="solved stamp fragment">
     <p class="solved">SOLVED</p>
