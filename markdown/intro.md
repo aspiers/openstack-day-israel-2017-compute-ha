@@ -3,8 +3,8 @@
     <h1>High Availability for Instances</h1>
     <h2 style="margin-bottom: 50px;">Moving to a Converged Upstream Solution</h2>
     <h3>
-        <a href="https://www.openstack.org/summit/boston-2017/summit-schedule/events/17971">
-            OpenStack summit, Boston, Tuesday 9<sup>th</sup> May 2017
+        <a href="https://openstackdayisrael2017.sched.com/event/05ceefcbbeddd948b776ae9c3de7c9e0">
+            OpenStack Day, Israel, Monday 5<sup>th</sup> June 2017
       </a>
     </h3>
 </div>
@@ -14,11 +14,6 @@
         <h3 class="name">Adam Spiers</h3>
         <h3 class="job-title">Senior Software Engineer, SUSE</h3>
         <h3 class="email"><a href="mailto:aspiers@suse.com">aspiers@suse.com</a></h3>
-    </div>
-    <div class="presenter presenter-2">
-        <h3 class="name">Sampath Priyankara</h3>
-        <h3 class="job-title">Software Engineer, NTT</h3>
-        <h3 class="email"><a href="mailto:sampath.priyankara@lab.ntt.co.jp">sampath.priyankara@lab.ntt.co.jp</a></h3>
     </div>
 </div>
 
