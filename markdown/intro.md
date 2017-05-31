@@ -1,4 +1,4 @@
-<!-- .slide: data-state="cover" id="cover-page" data-menu-title="Compute node HA" data-timing="30" -->
+<!-- .slide: data-state="cover" id="cover-page" data-menu-title="Compute node HA" data-timing="40" -->
 <div class="title">
     <h1>High Availability for Instances</h1>
     <h2 style="margin-bottom: 50px;">Moving to a Converged Upstream Solution</h2>
@@ -18,7 +18,7 @@
 </div>
 
 
-<!-- .slide: data-state="normal" id="sequel" data-timing="30" -->
+<!-- .slide: data-state="normal" id="sequel" data-timing="40" -->
 # Compute HA: the sequel!
 
 <div class="qrcode" id="qrcode-sequel"/>
@@ -28,7 +28,7 @@
 <h3 style="text-align: center"><a href="https://goo.gl/mgeiw3" style="font-size: 0.80em" target="_blank">https://goo.gl/mgeiw3</a></h3>
 
 
-<!-- .slide: data-state="normal" id="agenda" data-timing="30" -->
+<!-- .slide: data-state="normal" id="agenda" data-timing="40" -->
 # Agenda
 
 *   Compute plane HA vs. control plane HA

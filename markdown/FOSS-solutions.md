@@ -1,8 +1,8 @@
-<!-- .slide: data-state="section-break" id="FOSS-solutions" data-timing="5" -->
+<!-- .slide: data-state="section-break" id="FOSS-solutions" data-timing="10" -->
 # Existing F/OSS solutions
 
 
-<!-- .slide: data-state="normal" id="ocf-architecture" data-menu-title="OCF RAs" class="architecture" data-timing="90" -->
+<!-- .slide: data-state="normal" id="ocf-architecture" data-menu-title="OCF RAs" class="architecture" data-timing="150" -->
 ## `NovaCompute` / `NovaEvacuate` OCF agents
 
 <div class="architecture">
@@ -33,12 +33,12 @@ Note:
     *   Start waits for recovery to complete
 
 
-<!-- .slide: data-state="blank" id="SOC-demo" class="full-screen" data-menu-title="SOC demo" data-timing="15" -->
+<!-- .slide: data-state="blank" id="SOC-demo" class="full-screen" data-menu-title="SOC demo" data-timing="25" -->
 <iframe data-src="https://www.youtube.com/embed/OrsiP86rGM8"
         frameborder="0" allowfullscreen></iframe>
 
 
-<!-- .slide: data-state="normal" id="ocf-pros-cons" data-menu-title="OCF RA pros and cons" data-timing="30" -->
+<!-- .slide: data-state="normal" id="ocf-pros-cons" data-menu-title="OCF RA pros and cons" data-timing="40" -->
 ## `NovaCompute` / `NovaEvacuate` OCF agents
 
 ### Pros
@@ -54,7 +54,7 @@ Note:
     *   Some corner cases still problematic, e.g. if `nova` fails during recovery
 
 
-<!-- .slide: data-state="normal" id="masakari-architecture" class="architecture" data-timing="120" -->
+<!-- .slide: data-state="normal" id="masakari-architecture" class="architecture" data-timing="320" -->
 ## Masakari architecture
 
 <div class="architecture">
@@ -98,7 +98,7 @@ Note:
     *   VM down (detected via `libvirt`)
 
 
-<!-- .slide: data-state="normal" id="about-masakari" data-timing="30" -->
+<!-- .slide: data-state="normal" id="about-masakari" data-timing="70" -->
 ## About Masakari
 
 *   [Masakari Wiki](https://wiki.openstack.org/wiki/Masakari)
@@ -108,7 +108,7 @@ Note:
     * Conformance to OpenStack standards
 
 
-<!-- .slide: data-state="normal" id="mistral" data-menu-title="Mistral" data-timing="30"-->
+<!-- .slide: data-state="normal" id="mistral" data-menu-title="Mistral" data-timing="80"-->
 ## Mistral recovery workflow
 
 <div>
@@ -124,7 +124,7 @@ Note:
     *   https://github.com/gryf/mistral-evacuate
 
 
-<!-- .slide: data-state="normal" id="comparison" data-menu-title="Comparison" data-timing="30"-->
+<!-- .slide: data-state="normal" id="comparison" data-menu-title="Comparison" data-timing="60"-->
 ## Comparison matrix
 
 <table class="waffle" cellspacing="0" cellpadding="0">

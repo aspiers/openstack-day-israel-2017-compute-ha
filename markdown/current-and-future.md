@@ -1,8 +1,8 @@
-<!-- .slide: data-state="section-break" id="current-and-future" data-timing="5" -->
+<!-- .slide: data-state="section-break" id="current-and-future" data-timing="10" -->
 # Current and future work
 
 
-<!-- .slide: data-state="normal" id="modular" data-timing="30" -->
+<!-- .slide: data-state="normal" id="modular" data-timing="60" -->
 # Modular architecture
 
 *   <!-- .element: class="fragment" -->
@@ -19,7 +19,7 @@
     https://etherpad.openstack.org/p/newton-instance-ha
 
 
-<!-- .slide: data-state="normal" id="specs" data-timing="60" -->
+<!-- .slide: data-state="normal" id="specs" data-timing="50" -->
 # Specs
 
 [`openstack-resource-agents-specs` repository](https://github.com/openstack/openstack-resource-agents-specs/tree/master/specs/newton/approved)
@@ -40,7 +40,7 @@
     *   ditto
 
 
-<!-- .slide: data-state="normal" id="existing-architecture" data-menu-title="OCF architecture" data-timing="60" -->
+<!-- .slide: data-state="normal" id="existing-architecture" data-menu-title="OCF architecture" data-timing="70" -->
 
 <div class="new-architecture">
     <img alt="Standard architecture with pacemaker_remote"
@@ -49,7 +49,7 @@
 </div>
 
 
-<!-- .slide: data-state="normal" id="unified-architecture" data-menu-title="Driver-based alerting RA" data-timing="60" -->
+<!-- .slide: data-state="normal" id="unified-architecture" data-menu-title="Driver-based alerting RA" data-timing="140" -->
 
 <div class="new-architecture">
     <img alt="Standard architecture with pacemaker_remote"
@@ -75,7 +75,7 @@ Note:
 </div>
 
 
-<!-- .slide: data-state="normal" id="grand-unified-architecture" data-menu-title="Grand unified architecture" data-timing="30" -->
+<!-- .slide: data-state="normal" id="grand-unified-architecture" data-menu-title="Grand unified architecture" data-timing="70" -->
 
 <div class="new-architecture">
     <img alt="Standard architecture with pacemaker_remote"
@@ -84,7 +84,7 @@ Note:
 </div>
 
 
-<!-- .slide: data-state="normal" id="current-work" data-timing="60" -->
+<!-- .slide: data-state="normal" id="current-work" data-timing="50" -->
 # Current work
 
 *   `masakari` packaged in [`rpm-packaging` project](https://review.openstack.org/#/q/%28masakari+OR+masakariclient%29+project:openstack/rpm-packaging)
@@ -92,7 +92,7 @@ Note:
 *   Finalise specs
 
 
-<!-- .slide: data-state="normal" id="future-work" data-timing="60" -->
+<!-- .slide: data-state="normal" id="future-work" data-timing="80" -->
 # Future work
 
 ### masakari

@@ -4,7 +4,7 @@
 # control plane HA
 
 
-<!-- .slide: data-state="normal" id="control-plane" class="diagram-and-list" data-timing="20" -->
+<!-- .slide: data-state="normal" id="control-plane" class="diagram-and-list" data-timing="40" -->
 ## Typical HA control plane
 
 <div class="diagrams">
@@ -35,7 +35,7 @@ Note:
 scope of this talk.
 
 
-<!-- .slide: data-state="normal" id="compute-failure" data-menu-title="Compute failure" data-timing="15" -->
+<!-- .slide: data-state="normal" id="compute-failure" data-menu-title="Compute failure" data-timing="20" -->
 ## If only the control plane is HA …
 
 <img class="arch" alt="control/compute architecture" data-src="images/architecture.svg" />

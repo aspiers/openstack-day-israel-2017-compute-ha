@@ -1,4 +1,4 @@
-<!-- .slide: data-state="normal" id="community" data-timing="40" -->
+<!-- .slide: data-state="normal" id="community" data-timing="50" -->
 ## How to get involved
 
 *   ["HA in OpenStack" Forum discussion](https://www.openstack.org/summit/boston-2017/summit-schedule/events/18802/high-availability-in-openstack)

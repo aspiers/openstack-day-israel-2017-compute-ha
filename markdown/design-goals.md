@@ -25,7 +25,7 @@ a technology called `pacemaker_remoted` which helps us with that, and
 the upstream community has already reached a consensus to use it.
 
 
-<!-- .slide: data-state="normal" id="common-architecture" data-menu-title="Architecture" class="architecture" data-timing="40" -->
+<!-- .slide: data-state="normal" id="common-architecture" data-menu-title="Architecture" class="architecture" data-timing="60" -->
 ## Interlude: Common, scalable architecture
 
 <div class="architecture">
@@ -47,7 +47,7 @@ Scalability issue solved by `pacemaker_remote`
 *   Can scale to very large numbers
 
 
-<!-- .slide: data-state="normal" id="failure-modes" class="architecture" data-menu-title="Failure modes" data-timing="45" -->
+<!-- .slide: data-state="normal" id="failure-modes" class="architecture" data-menu-title="Failure modes" data-timing="80" -->
 ## Design goal: handle different failure modes
 
 <div class="architecture">
@@ -125,7 +125,7 @@ Note:
 We assume that Pacemaker is reliable, otherwise we're sunk!
 
 
-<!-- .slide: data-state="normal" id="operability" data-menu-title="Operability" data-timing="30" -->
+<!-- .slide: data-state="normal" id="operability" data-menu-title="Operability" data-timing="40" -->
 ## Design goal: Operability
 
 <figure>
@@ -140,7 +140,7 @@ historical alerts and corresponding actions.
 This could be incorporated into Horizon.
 
 
-<!-- .slide: data-state="normal" id="configurability" data-menu-title="Configurability" data-timing="30" -->
+<!-- .slide: data-state="normal" id="configurability" data-menu-title="Configurability" data-timing="40" -->
 ## Design goal: Configurability
 
 <img data-src="images/cloud.jpg" class="cloud" alt="cloud outline" />
@@ -211,7 +211,7 @@ Which failures to handle?
 *   Individually selected instances?
 
 
-<!-- .slide: data-state="normal" id="configurability-2" data-menu-title="Configurability (2)" data-timing="30" -->
+<!-- .slide: data-state="normal" id="configurability-2" data-menu-title="Configurability (2)" data-timing="40" -->
 ## Design goal: Configurability (2)
 
 Different cloud operators will want to support different SLAs
@@ -227,7 +227,7 @@ with different workflows.
 Note: There is no one-size-fits-all solution to compute HA.
 
 
-<!-- .slide: data-state="normal" id="upgradability" data-timing="30" -->
+<!-- .slide: data-state="normal" id="upgradability" data-timing="50" -->
 # Upgradability
 
 <figure>
@@ -241,7 +241,7 @@ don't make life hard for (existing customers of) SUSE, NTT, Red Hat,
 or anyone else using upstream solution
 
 
-<!-- .slide: data-state="normal" id="context-aware" data-menu-title="Context-aware recovery" data-timing="60" -->
+<!-- .slide: data-state="normal" id="context-aware" data-menu-title="Context-aware recovery" data-timing="120" -->
 ## Design goal: Intelligent, Context-aware Recovery
 
 *   <!-- .element: class="fragment" -->
@@ -257,7 +257,7 @@ or anyone else using upstream solution
     Respect ephemeral storage boundaries where applicable
 
 
-<!-- .slide: data-state="normal" id="performance" data-menu-title="Performance" data-timing="60" -->
+<!-- .slide: data-state="normal" id="performance" data-menu-title="Performance" data-timing="70" -->
 ## Design goal: Performance
 
 *   <!-- .element: class="fragment" -->
@@ -274,7 +274,7 @@ or anyone else using upstream solution
         Pre-emption is visible to operators
 
 
-<!-- .slide: data-state="normal" id="conformance" data-menu-title="Conformance" data-timing="40" -->
+<!-- .slide: data-state="normal" id="conformance" data-menu-title="Conformance" data-timing="50" -->
 ## Design goal: Conformance to OpenStack standards
 
 *   <!-- .element: class="fragment" -->

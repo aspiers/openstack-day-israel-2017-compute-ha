@@ -7,7 +7,7 @@ The previous slide suggests there is a problem which needs
 solving, but does it *always* need solving?
 
 
-<!-- .slide: data-state="normal" id="pets-vs-cattle" class="pets-vs-cattle" data-timing="30" -->
+<!-- .slide: data-state="normal" id="pets-vs-cattle" class="pets-vs-cattle" data-timing="40" -->
 ## Pets vs. cattle
 
 <div style="display: flex; justify-content: center; height: 87%">
@@ -25,7 +25,7 @@ Note:
 - Thanks to Bill Baker for the original terminology.
 
 
-<!-- .slide: data-state="normal" id="cattle" data-timing="60" -->
+<!-- .slide: data-state="normal" id="cattle" data-timing="90" -->
 ## Cattle: ideal for the cloud
 
 <img data-src="images/cloud.jpg" class="cloud" alt="cloud outline" />
@@ -112,7 +112,7 @@ Note:
   e.g. by rebooting compute host.
 
 
-<!-- .slide: data-state="normal" id="pets" data-timing="60" -->
+<!-- .slide: data-state="normal" id="pets" data-timing="70" -->
 ## Pets in the cloud?
 
 <img data-src="images/cloud.jpg" class="cloud" alt="cloud outline" />
@@ -169,7 +169,7 @@ Note:
 - Fencing required to avoid data corruption.
 
 
-<!-- .slide: data-state="normal" id="justification" data-menu-title="Justification" data-timing="60" -->
+<!-- .slide: data-state="normal" id="justification" data-menu-title="Justification" data-timing="70" -->
 ## Does OpenStack really need compute plane HA?
 
 <span class="fragment" data-fragment-index="1">
@@ -202,7 +202,7 @@ This is a controversial topic, but naysayers tend to favour idealism
 over real world pragmatism.
 
 
-<!-- .slide: data-state="blank-slide" class="full-screen" id="user-story" data-menu-title="User story" data-timing="10s" -->
+<!-- .slide: data-state="blank-slide" class="full-screen" id="user-story" data-menu-title="User story" data-timing="40" -->
 <a href="http://specs.openstack.org/openstack/openstack-user-stories/user-stories/proposed/ha_vm.html">
     <img alt="User story" src="images/user-story.png"/>
 </a>
