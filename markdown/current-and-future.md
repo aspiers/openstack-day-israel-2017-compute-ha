@@ -52,7 +52,7 @@
 <!-- .slide: data-state="normal" id="unified-architecture" data-menu-title="Driver-based alerting RA" data-timing="140" -->
 
 <div class="new-architecture">
-    <img alt="Standard architecture with pacemaker_remote"
+    <img alt="Driver-based nova-host-alerter RA"
          class="architecture"
          data-src="images/unified-architecture.svg" />
 </div>
@@ -69,7 +69,7 @@ Note:
 <!-- .slide: data-state="normal" id="unified-architecture-mistral" data-menu-title="Mistral architecture" data-timing="30" -->
 
 <div class="new-architecture">
-    <img alt="Standard architecture with pacemaker_remote"
+    <img alt="Original mistral architecture"
          class="architecture"
          data-src="images/unified-architecture+mistral.svg" />
 </div>
@@ -78,7 +78,7 @@ Note:
 <!-- .slide: data-state="normal" id="grand-unified-architecture" data-menu-title="Grand unified architecture" data-timing="70" -->
 
 <div class="new-architecture">
-    <img alt="Standard architecture with pacemaker_remote"
+    <img alt="Grand unified architecture"
          class="architecture"
          data-src="images/grand-unified-architecture.svg" />
 </div>
