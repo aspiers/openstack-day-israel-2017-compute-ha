@@ -102,18 +102,39 @@ Note:
 
 Note:
 
-- Stateless cattle workloads *might* be naturally resilient
-- Application layer ideally handles individual failures by deploying
-  more instances
+- Individual failures handled by deploying more instances
+- One cattle workload *might* be naturally resilient:
+  application layer handles failures and autoscales
+- But another workload might be "dumb cattle"
+  => need control plane to resurrect
 - Can also use OpenStack API to clean up failed instances
-- But might be dumb cattle => need control plane to resurrect
 - What if a whole compute host fails?
-- Still need to handle failures in the cloud infrastructure layer,
-  e.g. by rebooting compute host.
+- Even if all cattle are "smart", still might want to handle failures
+  in the cloud infrastructure layer, e.g. by rebooting compute host.
 
 
-<!-- .slide: data-state="normal" id="pets" data-timing="70" -->
-## Pets in the cloud?
+<!-- .slide: data-state="normal" id="why-pets" data-menu-title="Pets in the cloud" data-timing="50" -->
+## Valid reasons for running pets in the cloud
+
+*   <!-- .element: class="fragment" data-fragment-index="2" -->
+    Manageability benefits
+*   <!-- .element: class="fragment" data-fragment-index="3" -->
+    Want to avoid multiple virtual estates
+*   <!-- .element: class="fragment" data-fragment-index="4" -->
+    Too expensive to cloudify legacy workloads
+
+Note:
+
+Rather than painful "big bang" migrations to cloud-aware workloads,
+it's easier to deprecate legacy workloads, let them reach EOL whilst
+gradually migrating over to next-generation architectures.
+
+This is a controversial topic, but naysayers tend to favour idealism
+over real world pragmatism.
+
+
+<!-- .slide: data-state="normal" id="pet-failures" data-timing="70" -->
+## Pet failures in the cloud
 
 <img data-src="images/cloud.jpg" class="cloud" alt="cloud outline" />
 
@@ -162,11 +183,9 @@ Note:
 
 Note:
 
-- You could keep your pets outside the cloud, but then you'd lose all
-  the manageability benefits of clouds.
 - When a compute node becomes unresponsive, any stateful pets running
   there need to be carefully resurrected elsewhere.
-- Fencing required to avoid data corruption.
+- Fencing (e.g. power off node) required to avoid data corruption.
 
 
 <!-- .slide: data-state="normal" id="justification" data-menu-title="Justification" data-timing="50" -->
@@ -177,29 +196,11 @@ Note:
          data-src="images/yes-or-no.svg" alt="Yes!" />
 </span>
 
-### Why?  <!-- .element: class="fragment" data-fragment-index="2" style="margin-top: 80px" -->
-
-*   <!-- .element: class="fragment" data-fragment-index="2" -->
-    Compute HA needed for cattle as well as pets
-*   <!-- .element: class="fragment" data-fragment-index="3" -->
-    Valid reasons for running pets in OpenStack
-    *   <!-- .element: class="fragment" data-fragment-index="4" -->
-        Manageability benefits
-    *   <!-- .element: class="fragment" data-fragment-index="5" -->
-        Want to avoid multiple virtual estates
-    *   <!-- .element: class="fragment" data-fragment-index="6" -->
-        Too expensive to cloudify legacy workloads
-
 Note:
 
-So to sum up, my vote is yes, because even cattle need compute node HA.
-
-Also, rather than painful "big bang" migrations to cloud-aware
-workloads, it's easier to deprecate legacy workloads, let them reach
-EOL whilst gradually migrating over to next-generation architectures.
-
-This is a controversial topic, but naysayers tend to favour idealism
-over real world pragmatism.
+So to sum up, the community consenus these days is generally yes,
+because compute node HA is certainly needed for protecting pets, and
+also sometimes for cattle.
 
 
 <!-- .slide: data-state="blank-slide" class="full-screen" id="user-story" data-menu-title="User story" data-timing="40" -->
