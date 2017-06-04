@@ -25,7 +25,7 @@ a technology called `pacemaker_remoted` which helps us with that, and
 the upstream community has already reached a consensus to use it.
 
 
-<!-- .slide: data-state="normal" id="common-architecture" data-menu-title="Architecture" class="architecture" data-timing="60" -->
+<!-- .slide: data-state="normal" id="common-architecture" data-menu-title="Architecture" class="architecture" data-timing="20" -->
 ## Interlude: Common, scalable architecture
 
 <div class="architecture">
@@ -47,7 +47,7 @@ Scalability issue solved by `pacemaker_remote`
 *   Can scale to very large numbers
 
 
-<!-- .slide: data-state="normal" id="failure-modes" class="architecture" data-menu-title="Failure modes" data-timing="80" -->
+<!-- .slide: data-state="normal" id="failure-modes" class="architecture" data-menu-title="Failure modes" data-timing="60" -->
 ## Design goal: handle different failure modes
 
 <div class="architecture">
@@ -125,7 +125,7 @@ Note:
 We assume that Pacemaker is reliable, otherwise we're sunk!
 
 
-<!-- .slide: data-state="normal" id="operability" data-menu-title="Operability" data-timing="40" -->
+<!-- .slide: data-state="normal" id="operability" data-menu-title="Operability" data-timing="30" -->
 ## Design goal: Operability
 
 <figure>
@@ -140,7 +140,7 @@ historical alerts and corresponding actions.
 This could be incorporated into Horizon.
 
 
-<!-- .slide: data-state="normal" id="configurability" data-menu-title="Configurability" data-timing="40" -->
+<!-- .slide: data-state="normal" id="configurability" data-menu-title="Configurability" data-timing="30" -->
 ## Design goal: Configurability
 
 <img data-src="images/cloud.jpg" class="cloud" alt="cloud outline" />
