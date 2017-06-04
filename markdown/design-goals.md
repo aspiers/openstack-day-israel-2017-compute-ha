@@ -20,9 +20,7 @@ Note:
 
 Clouds will often scale to *many* compute nodes
 - 100s, or even 1000s.  This means that whatever components we use for
-compute plane HA must not introduce new bottlenecks.  Luckily there is
-a technology called `pacemaker_remoted` which helps us with that, and
-the upstream community has already reached a consensus to use it.
+compute plane HA must not introduce new bottlenecks.
 
 
 <!-- .slide: data-state="normal" id="common-architecture" data-menu-title="Architecture" class="architecture" data-timing="20" -->
