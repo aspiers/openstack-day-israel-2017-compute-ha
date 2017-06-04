@@ -163,7 +163,7 @@ This could be incorporated into Horizon.
 <img data-src="images/CowFace-c.jpg" class="cow row-2 col-3" alt="cattle" />
 <img data-src="images/brown-cow.jpg" class="cow row-2 col-4" alt="cattle" />
 
-<img data-src="images/kitten.jpg" class="kitteh row-3 col-1" alt="kitteh" />
+<img data-src="images/orange-kitten.jpg" class="kitteh2 row-3 col-1" alt="kitteh" />
 <img data-src="images/CowFace-c.jpg" class="cow row-3 col-2" alt="cattle" />
 
 <!-- Configure by AZ -->
