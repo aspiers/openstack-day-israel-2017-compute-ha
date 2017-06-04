@@ -4,7 +4,7 @@
 # control plane HA
 
 
-<!-- .slide: data-state="normal" id="control-plane" class="diagram-and-list" data-timing="40" -->
+<!-- .slide: data-state="normal" id="control-plane" class="diagram-and-list" data-timing="60" -->
 ## Typical HA control plane
 
 <div class="diagrams">

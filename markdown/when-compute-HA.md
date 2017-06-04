@@ -169,7 +169,7 @@ Note:
 - Fencing required to avoid data corruption.
 
 
-<!-- .slide: data-state="normal" id="justification" data-menu-title="Justification" data-timing="70" -->
+<!-- .slide: data-state="normal" id="justification" data-menu-title="Justification" data-timing="50" -->
 ## Does OpenStack really need compute plane HA?
 
 <span class="fragment" data-fragment-index="1">
