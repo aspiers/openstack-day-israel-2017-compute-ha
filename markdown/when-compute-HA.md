@@ -18,10 +18,10 @@ solving, but does it *always* need solving?
 
 Note:
 
-- Pets are each unique, stateful, and take a lot of work to create and
-  look after.
-- Cattle are all the same, and stateless, so when something goes wrong
-  with one you just get another one to replace it.
+- Pets are each unique, irreplaceable, stateful, and take a lot of
+  work to create and look after.
+- Cattle are all the same, and usually stateless, so when something
+  goes wrong with one you just get another one to replace it.
 - Thanks to Bill Baker for the original terminology.
 
 
