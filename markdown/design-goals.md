@@ -106,7 +106,7 @@ Note:
     *   storage resource, *or*
     *   of faulty node (a.k.a. **STONITH**)
 
-    See [previous talk](https://www.openstack.org/videos/video/high-availability-for-pets-and-hypervisors-state-of-the-nation) for details.
+    See [Austin talk](https://www.openstack.org/videos/video/high-availability-for-pets-and-hypervisors-state-of-the-nation) for details.
 
 *   Needs to handle failure or (temporary) freeze of:
     *   Hardware (including various NICs)
@@ -211,7 +211,7 @@ Which failures to handle?
 
 <br/>
 ```clang
-#include <timemachine.h>    /* See previous talk for details */
+#include <timemachine.h>    /* See Boston talk for details */
 ```
 
 
@@ -234,7 +234,7 @@ or anyone else using upstream solution
 
 <br/>
 ```clang
-#include <timemachine.h>    /* See previous talk for details */
+#include <timemachine.h>    /* See Boston talk for details */
 ```
 
 
@@ -243,7 +243,7 @@ or anyone else using upstream solution
 
 <br/>
 ```clang
-#include <timemachine.h>    /* See previous talk for details */
+#include <timemachine.h>    /* See Boston talk for details */
 ```
 
 
