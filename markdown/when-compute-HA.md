@@ -188,12 +188,11 @@ Note:
 - Fencing (e.g. power off node) required to avoid data corruption.
 
 
-<!-- .slide: data-state="normal" id="justification" data-menu-title="Justification" data-timing="50" -->
+<!-- .slide: data-state="normal" id="justification" data-menu-title="Justification" data-timing="15" -->
 ## Does OpenStack really need compute plane HA?
 
 <span class="fragment" data-fragment-index="1">
-    <img class="fragment fade-out" data-fragment-index="2"
-         data-src="images/yes-or-no.svg" alt="Yes!" />
+    <img data-src="images/yes-or-no.svg" alt="Yes!" />
 </span>
 
 Note:
