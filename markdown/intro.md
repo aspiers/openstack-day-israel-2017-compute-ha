@@ -18,14 +18,24 @@
 </div>
 
 
-<!-- .slide: data-state="normal" id="sequel" data-timing="40" -->
-# Compute HA: the sequel!
+<!-- .slide: data-state="normal" id="austin" data-timing="30" -->
+# Original talk in Austin
 
-<div class="qrcode" id="qrcode-sequel"/>
+<div class="qrcode" id="qrcode-austin"/>
 <h3 style="text-align: center"><a href="https://www.openstack.org/videos/video/high-availability-for-pets-and-hypervisors-state-of-the-nation" target="_blank"
-       style="font-size: 0.80em" id="sequel">https://www.openstack.org/videos/video/high-availability-for-pets-and-hypervisors-state-of-the-nation</a></h3>
+       style="font-size: 0.80em" id="austin">https://www.openstack.org/videos/video/high-availability-for-pets-and-hypervisors-state-of-the-nation</a></h3>
 
 <h3 style="text-align: center"><a href="https://goo.gl/mgeiw3" style="font-size: 0.80em" target="_blank">https://goo.gl/mgeiw3</a></h3>
+
+
+<!-- .slide: data-state="normal" id="boston" data-timing="20" -->
+# Sequel in Boston
+
+<div class="qrcode" id="qrcode-boston"/>
+<h3 style="text-align: center"><a href="https://www.openstack.org/videos/boston-2017/high-availability-for-instances-moving-to-a-converged-upstream-solution" target="_blank"
+       style="font-size: 0.70em" id="boston">https://www.openstack.org/videos/boston-2017/high-availability-for-instances-moving-to-a-converged-upstream-solution</a></h3>
+
+<h3 style="text-align: center"><a href="https://goo.gl/mgeiw3" style="font-size: 0.80em" target="_blank">https://goo.gl/OVGMfL</a></h3>
 
 
 <!-- .slide: data-state="normal" id="agenda" data-timing="40" -->
