@@ -199,9 +199,6 @@ This could be incorporated into Horizon.
 
 Note:
 
-Different cloud operators will want to support different SLAs
-with different workflows.
-
 Which failures to handle?
 *   All hosts in an Availability Zone?
 *   All instances in a project?
@@ -209,20 +206,13 @@ Which failures to handle?
 *   Individually selected instances?
 
 
-<!-- .slide: data-state="normal" id="configurability-2" data-menu-title="Configurability (2)" data-timing="40" -->
+<!-- .slide: data-state="normal" id="configurability-2" data-menu-title="Configurability (2)" data-timing="10" -->
 ## Design goal: Configurability (2)
 
-Different cloud operators will want to support different SLAs
-with different workflows.
-
-*   <!-- .element: class="fragment" -->
-    Optional use of host reservation to ensure minimum level of redundancy
-*   <!-- .element: class="fragment" -->
-    Retry thresholds on recovery of processes and VM instances
-*   <!-- .element: class="fragment" -->
-    Configurable workflows
-
-Note: There is no one-size-fits-all solution to compute HA.
+<br/>
+```clang
+#include <timemachine.h>    /* See previous talk for details */
+```
 
 
 <!-- .slide: data-state="normal" id="upgradability" data-timing="50" -->
@@ -239,51 +229,30 @@ don't make life hard for (existing customers of) SUSE, NTT, Red Hat,
 or anyone else using upstream solution
 
 
-<!-- .slide: data-state="normal" id="context-aware" data-menu-title="Context-aware recovery" data-timing="120" -->
+<!-- .slide: data-state="normal" id="context-aware" data-menu-title="Context-aware recovery" data-timing="10" -->
 ## Design goal: Intelligent, Context-aware Recovery
 
-*   <!-- .element: class="fragment" -->
-    If `nova-compute` fails, VMs are still perfectly healthy
-    but unmanageable
-    *   Should they be automatically killed?  Depends on
-        the workload.
-*   <!-- .element: class="fragment" -->
-    Fault deduplication
-*   <!-- .element: class="fragment" -->
-    Set host to maintenance mode until recovery is complete
-*   <!-- .element: class="fragment" -->
-    Respect ephemeral storage boundaries where applicable
+<br/>
+```clang
+#include <timemachine.h>    /* See previous talk for details */
+```
 
 
-<!-- .slide: data-state="normal" id="performance" data-menu-title="Performance" data-timing="70" -->
+<!-- .slide: data-state="normal" id="performance" data-menu-title="Performance" data-timing="10" -->
 ## Design goal: Performance
 
-*   <!-- .element: class="fragment" -->
-    Quick response to failures
-    *   <!-- .element: class="fragment" -->
-        Push not pull - don't poll
-    *   <!-- .element: class="fragment" -->
-        Notifications on message bus
-*   <!-- .element: class="fragment" -->
-    Fault prioritization / pre-emption
-    *   <!-- .element: class="fragment" -->
-        e.g. host faults pre-empt instance faults
-    *   <!-- .element: class="fragment" -->
-        Pre-emption is visible to operators
+<br/>
+```clang
+#include <timemachine.h>    /* See previous talk for details */
+```
 
 
-<!-- .slide: data-state="normal" id="conformance" data-menu-title="Conformance" data-timing="50" -->
+<!-- .slide: data-state="normal" id="conformance" data-menu-title="Conformance" data-timing="20" -->
 ## Design goal: Conformance to OpenStack standards
 
-*   <!-- .element: class="fragment" -->
-    "Four Opens": Source, Design, Development, Community
-*   <!-- .element: class="fragment" -->
-    Python
-*   <!-- .element: class="fragment" -->
-    `oslo.*`
-*   <!-- .element: class="fragment" -->
-    OpenStack-hosted
-*   <!-- .element: class="fragment" -->
-    gerrit review process
-*   <!-- .element: class="fragment" -->
-    CI with unit tests
+*   "Four Opens": Source, Design, Development, Community
+*   Python
+*   `oslo.*`
+*   OpenStack-hosted
+*   gerrit review process
+*   CI with unit tests

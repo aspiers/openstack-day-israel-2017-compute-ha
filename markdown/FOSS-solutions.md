@@ -2,35 +2,24 @@
 # Existing F/OSS solutions
 
 
-<!-- .slide: data-state="normal" id="ocf-architecture" data-menu-title="OCF RAs" class="architecture" data-timing="150" -->
-## `NovaCompute` / `NovaEvacuate` OCF agents
+<!-- .slide: data-state="normal" id="ocf-pros-cons" data-menu-title="OCF RA pros and cons" data-timing="40" -->
+## Pacemaker + `NovaCompute` / `NovaEvacuate` RAs
 
-<div class="architecture">
-    <img alt="Standard architecture with pacemaker_remote"
-         class="architecture fragment fade-out" data-fragment-index="1"
-         data-src="images/standard-architecture.svg" />
+### Pros <!-- .element: class="fragment" data-fragment-index="1" -->
 
-    <span class="fragment" data-fragment-index="1">
-        <img alt="OCF RA architecture"
-             class="OCF-RA architecture fragment fade-out" data-fragment-index="2"
-             data-src="images/OCF-RA-architecture.svg" />
-    </span>
+*   <!-- .element: class="fragment" data-fragment-index="1" -->
+    Ready for production use *now*
+*   <!-- .element: class="fragment" data-fragment-index="2" -->
+    Commercial support available
+*   <!-- .element: class="fragment" data-fragment-index="3" -->
+    RAs [upstream in `openstack-resource-agents` repo](https://github.com/openstack/openstack-resource-agents/tree/master/ocf)
 
-    <span class="fragment" data-fragment-index="2">
-        <img alt="OCF RA failure domains"
-             class="OCF-RA architecture"
-             data-src="images/OCF-RA-failure-domains.svg" />
-    </span>
-</div>
+### Cons <!-- .element: class="fragment" data-fragment-index="4" -->
 
-Note:
-*   Custom OCF Resource Agents (RAs)
-    *   Pacemaker plugins to manage resources
-*   Custom fencing agent (`fence_compute`) flags host for recovery
-*   `NovaEvacuate` RA polls for flags, and initiates recovery
-    *   Will keep retrying if recovery not possible
-*   `NovaCompute` RA starts / stops `nova-compute`
-    *   Start waits for recovery to complete
+*   <!-- .element: class="fragment" data-fragment-index="4" -->
+    Known limitations (not bugs):
+    *   Only handles failure of compute node, not of VMs, or `nova-compute`
+    *   Some corner cases still problematic, e.g. if `nova` fails during recovery
 
 
 <!-- .slide: data-state="blank" id="SOC-demo" class="full-screen" data-menu-title="SOC demo" data-timing="25" -->
@@ -38,77 +27,26 @@ Note:
         frameborder="0" allowfullscreen></iframe>
 
 
-<!-- .slide: data-state="normal" id="ocf-pros-cons" data-menu-title="OCF RA pros and cons" data-timing="40" -->
-## `NovaCompute` / `NovaEvacuate` OCF agents
+<!-- .slide: data-state="normal" id="about-masakari" data-timing="30" -->
+## Masakari
 
-### Pros
-
-*   Ready for production use *now*
-*   Commercial support available
-*   RAs [upstream in `openstack-resource-agents` repo](https://github.com/openstack/openstack-resource-agents/tree/master/ocf)
-
-### Cons
-
-*   Known limitations (not bugs):
-    *   Only handles failure of compute node, not of VMs, or `nova-compute`
-    *   Some corner cases still problematic, e.g. if `nova` fails during recovery
-
-
-<!-- .slide: data-state="normal" id="masakari-architecture" class="architecture" data-timing="320" -->
-## Masakari architecture
-
-<div class="architecture">
-    <img alt="Standard architecture with pacemaker_remote"
-         class="architecture fragment fade-out" data-fragment-index="1"
-         data-src="images/standard-architecture.svg" />
-
-    <span class="fragment" data-fragment-index="1">
-        <img alt="masakari architecture"
-             class="masakari architecture fragment fade-out" data-fragment-index="2"
-             data-src="images/masakari-architecture2.svg" />
-    </span>
-
-    <span class="fragment" data-fragment-index="2">
-        <img alt="masakari process failure"
-             class="masakari architecture fragment fade-out" data-fragment-index="3"
-             data-src="images/masakari-processdown.svg" />
-    </span>
-
-    <span class="fragment" data-fragment-index="3">
-        <img alt="masakari vm failure"
-             class="masakari architecture fragment fade-out" data-fragment-index="4"
-             data-src="images/masakari-vmdown.svg" />
-    </span>
-
-    <span class="fragment" data-fragment-index="4">
-        <img alt="masakari host failure"
-             class="masakari architecture"
-             data-src="images/masakari-hostdown.svg" />
-    </span>
-</div>
-
-Note:
-
-*   Similar architectural concept, different code
-    *   Recovery handled by separate controller service
-    *   Persists state to database
-*   Monitors for [3 types of failure](https://github.com/ntt-sic/masakari/blob/master/docs/evacuation_patterns.md):
-    *   compute node down
-    *   `nova-compute` service down
-    *   VM down (detected via `libvirt`)
+*   https://launchpad.net/masakari
+*   https://wiki.openstack.org/wiki/Masakari
+*   <!-- .element: class="fragment" data-fragment-index="1" -->
+    [Current Stable Release: stable/ocata](https://github.com/openstack/masakari/tree/stable/ocata)
+*   <!-- .element: class="fragment" data-fragment-index="2" -->
+    Enhanced recovery engine supports customizable recovery workflows
+*   <!-- .element: class="fragment" data-fragment-index="3" -->
+    Retry for failed workflows
+*   <!-- .element: class="fragment" data-fragment-index="4" -->
+    API
+*   <!-- .element: class="fragment" data-fragment-index="5" -->
+    Backed by DB / MQ
+*   <!-- .element: class="fragment" data-fragment-index="6" -->
+    Conformance to OpenStack standards
 
 
-<!-- .slide: data-state="normal" id="about-masakari" data-timing="70" -->
-## About Masakari
-
-*   [Masakari Wiki](https://wiki.openstack.org/wiki/Masakari)
-*   [Current Stable Release: stable/ocata](https://github.com/openstack/masakari/tree/stable/ocata)
-    * Enhanced recovery engine to supports customizable recovery patterns
-    * Retry for failed recovery workflows
-    * Conformance to OpenStack standards
-
-
-<!-- .slide: data-state="normal" id="mistral" data-menu-title="Mistral" data-timing="80"-->
+<!-- .slide: data-state="normal" id="mistral" data-menu-title="Mistral" data-timing="40"-->
 ## Mistral recovery workflow
 
 <div>
