@@ -2,7 +2,7 @@
 # Current and future work
 
 
-<!-- .slide: data-state="normal" id="modular" data-timing="60" -->
+<!-- .slide: data-state="normal" id="modular" data-timing="40" -->
 # Modular architecture
 
 *   <!-- .element: class="fragment" -->
@@ -19,7 +19,7 @@
     https://etherpad.openstack.org/p/newton-instance-ha
 
 
-<!-- .slide: data-state="normal" id="specs" data-timing="50" -->
+<!-- .slide: data-state="normal" id="specs" data-timing="40" -->
 # Specs
 
 [`openstack-resource-agents-specs` repository](https://github.com/openstack/openstack-resource-agents-specs/tree/master/specs/newton/approved)
@@ -40,21 +40,48 @@
     *   ditto
 
 
-<!-- .slide: data-state="normal" id="existing-architecture" data-menu-title="OCF architecture" data-timing="70" -->
+<!-- .slide: data-state="normal" id="existing-architecture" data-menu-title="OCF architecture" data-timing="60" -->
 
 <div class="new-architecture">
-    <img alt="Standard architecture with pacemaker_remote"
+    <img alt="OCF RAs with pacemaker_remote"
          class="architecture"
-         data-src="images/OCF-architecture.svg" />
+         data-src="images/unified-architecture-01-OCF-only.svg" />
 </div>
 
 
-<!-- .slide: data-state="normal" id="unified-architecture" data-menu-title="Driver-based alerting RA" data-timing="140" -->
+<!-- .slide: data-state="normal" id="OCF-and-mistral" data-menu-title="OCF + mistral" data-timing="15" -->
 
 <div class="new-architecture">
-    <img alt="Driver-based nova-host-alerter RA"
+    <img alt="OCF RAs plus mistral"
          class="architecture"
-         data-src="images/unified-architecture.svg" />
+         data-src="images/unified-architecture-02-OCF-and-mistral.svg" />
+</div>
+
+
+<!-- .slide: data-state="normal" id="OCF-mistral-masakari" data-menu-title="All existing" data-timing="15" -->
+
+<div class="new-architecture">
+    <img alt="All 3 existing solutions"
+         class="architecture"
+         data-src="images/unified-architecture-03-all.svg" />
+</div>
+
+
+<!-- .slide: data-state="normal" id="to-change" data-menu-title="Initial changes" data-timing="15" -->
+
+<div class="new-architecture">
+    <img alt="Initial changes"
+         class="architecture"
+         data-src="images/unified-architecture-04-to-change.svg" />
+</div>
+
+
+<!-- .slide: data-state="normal" id="nova-host-alerter" data-menu-title="nova-host-alerter" data-timing="20" -->
+
+<div class="new-architecture">
+    <img alt="Introduce nova-host-alerter"
+         class="architecture"
+         data-src="images/unified-architecture-05-new.svg" />
 </div>
 
 Note:
@@ -66,21 +93,30 @@ Note:
 - Replace masakari-processmonitor with standard Pacemaker process monitoring
 
 
-<!-- .slide: data-state="normal" id="unified-architecture-mistral" data-menu-title="Mistral architecture" data-timing="30" -->
+<!-- .slide: data-state="normal" id="no-NovaEvacuate-hostmonitor" data-menu-title="Remove NovaEvacuate and masakari-hostmonitor" data-timing="10" -->
 
 <div class="new-architecture">
-    <img alt="Original mistral architecture"
+    <img alt="Remove NovaEvacuate and masakari-hostmonitor"
          class="architecture"
-         data-src="images/unified-architecture+mistral.svg" />
+         data-src="images/unified-architecture-06-no-NovaEvacuate-hostmonitor.svg" />
 </div>
 
 
-<!-- .slide: data-state="normal" id="grand-unified-architecture" data-menu-title="Grand unified architecture" data-timing="70" -->
+<!-- .slide: data-state="normal" id="mistral-integration" data-menu-title="mistral integration" data-timing="10" -->
 
 <div class="new-architecture">
-    <img alt="Grand unified architecture"
+    <img alt="mistral integration"
          class="architecture"
-         data-src="images/grand-unified-architecture.svg" />
+         data-src="images/unified-architecture-07-mistral-integration.svg" />
+</div>
+
+
+<!-- .slide: data-state="normal" id="no-fence_evacuate" data-menu-title="Remove fence_evacuate" data-timing="20" -->
+
+<div class="new-architecture">
+    <img alt="Remove fence_evacuate"
+         class="architecture"
+         data-src="images/unified-architecture-08-final.svg" />
 </div>
 
 
