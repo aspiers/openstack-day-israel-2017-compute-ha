@@ -2,8 +2,10 @@
 # Questions?
 
 <div class="qrcode" id="qrcode-talk-end"/>
-<h3 style="text-align: center"><a href="https://aspiers.github.io/openstack-day-israel-2017-compute-ha/" target="_blank"
+<h3 style="text-align: center"><a href="https://aspiers.github.io/openstack-day-israel-2017-compute-ha/" style="font-size: 0.90em" target="_blank"
        id="talk-end">https://aspiers.github.io/openstack-day-israel-2017-compute-ha/</a></h3>
+
+<h3 style="text-align: center"><a href="https://goo.gl/mgeiw3" style="font-size: 0.90em" target="_blank">https://goo.gl/mgeiw3</a></h3>
 
 
 <!-- .slide: data-menu-title="Disclaimers" id="disclaimers" data-state="green-bg" -->
