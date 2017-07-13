@@ -1,13 +1,11 @@
 <!-- .slide: data-state="normal" id="about" data-timing="0" -->
 # About this presentation
 
-<!--
-*   You can now [watch the video of this presentation online](https://www.openstack.org/videos/boston-2017/high-availability-for-instances-moving-to-a-converged-upstream-solution)
--->
+*   You can now [watch the video of this presentation online](https://youtu.be/uMCMDF9VkYk)
 *   Press `?` for help on navigating these slides
 *   Press `m` for a slide menu
 *   Press `s` for speaker notes <br />
-*   Here is the [original session abstract and details](https://www.openstack.org/summit/boston-2017/summit-schedule/events/17971)
+*   Here is the [original session abstract and details](http://sched.co/Aa7jd)
 
 
 <!-- .slide: data-state="qrcode" id="qrcode" data-menu-title="QR code" data-timing="0" -->
