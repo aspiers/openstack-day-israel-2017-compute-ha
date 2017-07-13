@@ -5,7 +5,7 @@
 *   Press `?` for help on navigating these slides
 *   Press `m` for a slide menu
 *   Press `s` for speaker notes <br />
-*   Here is the [original session abstract and details](http://sched.co/Aa7jd)
+*   Here is the [original session abstract and details](http://sched.co/Aa7j)
 
 
 <!-- .slide: data-state="qrcode" id="qrcode" data-menu-title="QR code" data-timing="0" -->
